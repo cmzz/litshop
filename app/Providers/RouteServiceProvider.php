@@ -48,10 +48,10 @@ class RouteServiceProvider extends ServiceProvider
                 ->namespace($this->namespace)
                 ->group(base_path('routes/customer.php'));
 
-            Route::prefix(config('litshop.admin.route_prefix', 'admin'))
+            Route::prefix(config('litshop.cp.route_prefix', 'cp'))
                 ->middleware('admin')
                 ->namespace($this->namespace)
-                ->group(base_path('routes/admin.php'));
+                ->group(base_path('routes/cp.php'));
         });
     }
 

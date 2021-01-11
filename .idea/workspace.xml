@@ -1,7 +1,69 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="" />
+    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Layouts/Base.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/logo-dark.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/logo-light.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/button.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/button/link.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/button/primary.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/button/secondary.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/dropdown.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/dropdown/item.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/icon/cash.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/icon/download.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/icon/inbox.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/icon/plus.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/icon/trash.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/icon/upload.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input/checkbox.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input/date.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input/file-upload.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input/group.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input/money.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input/rich-text.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input/select.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input/text.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/input/textarea.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/modal.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/modal/confirmation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/modal/dialog.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/notification.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/table.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/table/cell.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/table/heading.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/table/row.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/cp.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Admin/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Auth/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/View/Components/AppLayout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Layouts/AppLayout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/View/Components/GuestLayout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Layouts/GuestLayout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/admin/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/auth/login.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/admin.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cp.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +74,9 @@
     <execution>
       <executable path="composer" />
     </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -148,6 +213,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1mlaXcQGEqyKkzpqvfFsBgINajG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -155,7 +221,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Models" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/public" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -163,18 +229,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/app/View/Components/Layouts" />
+      <recent name="$PROJECT_DIR$/app/View/Components" />
+      <recent name="$PROJECT_DIR$/resources/views/components" />
       <recent name="$PROJECT_DIR$/app/Models" />
-      <recent name="$PROJECT_DIR$/resources/vender/mdb" />
-      <recent name="$PROJECT_DIR$/resources/views/layouts" />
-      <recent name="$PROJECT_DIR$/database/migrations" />
-      <recent name="$PROJECT_DIR$/routes" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/View/Components/Layouts" />
+      <recent name="$PROJECT_DIR$/app/CP/Auth" />
+      <recent name="$PROJECT_DIR$/resources/views/cp/auth" />
       <recent name="$PROJECT_DIR$/app/Core" />
       <recent name="$PROJECT_DIR$/app/Support" />
-      <recent name="$PROJECT_DIR$/app/Admin" />
-      <recent name="$PROJECT_DIR$/app/Admin/Components" />
-      <recent name="$PROJECT_DIR$/app/Common" />
     </key>
   </component>
   <component name="RunManager">
@@ -201,11 +267,26 @@
       <workItem from="1610096513641" duration="6937000" />
       <workItem from="1610201644987" duration="923000" />
       <workItem from="1610204943592" duration="1789000" />
+      <workItem from="1610373070949" duration="1109000" />
+      <workItem from="1610374230803" duration="984000" />
+      <workItem from="1610375233250" duration="1892000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1177" y="-512" key="#com.intellij.ide.util.MemberChooser" timestamp="1610098903083">
@@ -249,16 +330,17 @@
     </state>
     <state x="-1331" y="-556" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610099806098" />
     <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098698732" />
-    <state x="510" y="365" key="NewPhpFileDialog" timestamp="1610078687035">
-      <screen x="0" y="23" width="1440" height="833" />
+    <state x="438" y="-835" key="NewPhpFileDialog" timestamp="1610375869358">
+      <screen x="-469" y="-1417" width="2560" height="1417" />
     </state>
     <state x="510" y="365" key="NewPhpFileDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610078687035" />
-    <state x="-23" y="-1323" key="SettingsEditor" timestamp="1610202288925">
-      <screen x="-469" y="-1417" width="2560" height="1417" />
+    <state x="438" y="-835" key="NewPhpFileDialog/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610375869358" />
+    <state x="251" y="78" key="SettingsEditor" timestamp="1610373547769">
+      <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="251" y="78" key="SettingsEditor/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610082737039" />
     <state x="-23" y="-1323" key="SettingsEditor/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610202288925" />
-    <state x="251" y="78" key="SettingsEditor/0.23.1440.833@0.23.1440.833" timestamp="1610089488748" />
+    <state x="251" y="78" key="SettingsEditor/0.23.1440.833@0.23.1440.833" timestamp="1610373547769" />
     <state width="620" height="445" key="SwitcherDM" timestamp="1610202177171">
       <screen x="-469" y="-1417" width="2560" height="1417" />
     </state>
@@ -268,11 +350,11 @@
     </state>
     <state x="402" y="172" width="635" height="594" key="find.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610078417838" />
     <state x="402" y="172" width="635" height="594" key="find.popup/0.23.1440.833@0.23.1440.833" timestamp="1610176625199" />
-    <state x="215" y="-1150" width="1192" height="1150" key="search.everywhere.popup" timestamp="1610202466749">
+    <state x="215" y="-1150" width="1192" height="1150" key="search.everywhere.popup" timestamp="1610376724278">
       <screen x="-469" y="-1417" width="2560" height="1417" />
     </state>
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098707563" />
-    <state x="215" y="-1150" width="1192" height="1150" key="search.everywhere.popup/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610202466749" />
+    <state x="215" y="-1150" width="1192" height="1150" key="search.everywhere.popup/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610376724278" />
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833@0.23.1440.833" timestamp="1610094496122" />
   </component>
 </project>
