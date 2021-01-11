@@ -1,5 +1,8 @@
 <?php
 
+use App\CP\Auth\Login;
 use Illuminate\Support\Facades\Route;
 
-Route::get('login', \App\CP\Auth\Login::class);
+Route::name('cp.')->group(function() {
+    Route::get('login', Login::class)->name('auth.login');
+});
