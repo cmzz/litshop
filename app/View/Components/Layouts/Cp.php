@@ -4,7 +4,7 @@ namespace LitShop\View\Components\Layouts;
 
 use Illuminate\View\Component;
 
-class CpLayout extends Component
+class Cp extends Component
 {
     /**
      * Create a new component instance.

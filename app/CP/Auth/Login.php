@@ -38,6 +38,6 @@ class Login extends Component
 
     public function render()
     {
-        return view('cp.auth.login')->layout('layouts.cp');
+        return view('cp.auth.login')->layout('layouts.cpauth');
     }
 }

@@ -2,12 +2,20 @@
 
 namespace LitShop\CP;
 
-use Livewire\Component;
+use Admin;
+use LitShop\Models\AdminUser;
 
-class Dashboard extends Component
+class Dashboard extends BaseComponent
 {
+    public AdminUser $user;
+
+    public function mount()
+    {
+        $this->user = Admin::user();
+    }
+
     public function render()
     {
-        return view('cp.dashboard');
+        return view('cp.dashboard')->layout('layouts.cp');
     }
 }

@@ -19,15 +19,12 @@
 </head>
 
 <body class="font-sans antialiased">
-
     <div class="min-h-screen bg-gray-100">
         {{ $slot }}
     </div>
 
-    @stack('modals')
-
     @livewireScripts
-
+    @stack('modals')
     @stack('scripts')
 </body>
 </html>

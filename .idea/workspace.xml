@@ -19,18 +19,19 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="调整了代码与目录结构">
-      <change afterPath="$PROJECT_DIR$/app/Common/Middleware/CpAuthenticate.php" afterDir="false" />
+    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="完成了登陆">
+      <change afterPath="$PROJECT_DIR$/app/CP/BaseComponent.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/View/Components/Layouts/CpAuth.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/layouts/cpauth.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/CP/Auth/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Auth/Login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CP/Services/AdminUserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Services/AdminUserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Common/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Common/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Common/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/MakeCpUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/MakeCpUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/CP/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Dashboard.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Models/AdminUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AdminUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Rules/CpUserEmailAvailable.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Rules/CpUserEmailAvailable.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/View/Components/Layouts/AppLayout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Layouts/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/View/Components/Layouts/CpLayout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Layouts/Cp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cp/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/cp.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cp.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -180,7 +181,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Rules" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/View/Components/Layouts" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -188,11 +189,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/View/Components/Layouts" />
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
       <recent name="$PROJECT_DIR$/app/Rules" />
       <recent name="$PROJECT_DIR$/app/Console" />
       <recent name="$PROJECT_DIR$/app/Console/Commands" />
-      <recent name="$PROJECT_DIR$/app/Console/commands" />
-      <recent name="$PROJECT_DIR$/app/Exceptions" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/cp" />
@@ -230,7 +231,7 @@
       <workItem from="1610374230803" duration="984000" />
       <workItem from="1610375233250" duration="3355000" />
       <workItem from="1610417704928" duration="14041000" />
-      <workItem from="1610507068143" duration="5877000" />
+      <workItem from="1610507068143" duration="10385000" />
     </task>
     <task id="LOCAL-00001" summary="完成登陆">
       <created>1610377172489</created>
@@ -260,7 +261,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610509057276</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="完成了登陆">
+      <created>1610518565320</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1610518565320</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,7 +289,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="完成登陆" />
     <MESSAGE value="调整了代码与目录结构" />
-    <option name="LAST_COMMIT_MESSAGE" value="调整了代码与目录结构" />
+    <MESSAGE value="完成了登陆" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成了登陆" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1177" y="-512" key="#com.intellij.ide.util.MemberChooser" timestamp="1610098903083">
@@ -292,15 +301,15 @@
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="313" y="39" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610079456469" />
-    <state x="-1305" y="-553" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610447205530">
+    <state x="-1305" y="-553" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610520609653">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1305" y="-553" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610447205530" />
+    <state x="-1305" y="-553" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610520609653" />
     <state x="461" y="162" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833@0.23.1440.833" timestamp="1610446092778" />
-    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610518296247">
+    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610523485988">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610518296247" />
+    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610523485988" />
     <state x="520" y="-812" key="ComposerInitDialogKey" timestamp="1610202573769">
       <screen x="-469" y="-1417" width="2560" height="1417" />
     </state>
@@ -321,10 +330,10 @@
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610079472177" />
-    <state x="-1331" y="-556" key="NewPhpClassDialog" timestamp="1610512090185">
+    <state x="-1331" y="-556" key="NewPhpClassDialog" timestamp="1610523473381">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1331" y="-556" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610512090185" />
+    <state x="-1331" y="-556" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610523473381" />
     <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098698732" />
     <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833@0.23.1440.833" timestamp="1610443280645" />
     <state x="510" y="365" key="NewPhpFileDialog" timestamp="1610444300209">
@@ -353,10 +362,10 @@
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
     <state x="-946" y="-444" width="356" height="455" key="refactoring.ChangeSignatureDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610446585366" />
-    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup" timestamp="1610518466187">
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup" timestamp="1610523636140">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610518466187" />
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610523636140" />
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098707563" />
     <state x="215" y="-1150" width="1192" height="1150" key="search.everywhere.popup/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610377252483" />
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833@0.23.1440.833" timestamp="1610508131135" />

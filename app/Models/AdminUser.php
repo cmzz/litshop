@@ -114,4 +114,9 @@ class AdminUser extends Authenticatable
     protected $appends = [
         'avatar',
     ];
+
+    public function getAvatarAttribute($key)
+    {
+        return '';
+    }
 }

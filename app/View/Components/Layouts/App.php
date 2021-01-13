@@ -4,7 +4,7 @@ namespace LitShop\View\Components\Layouts;
 
 use Illuminate\View\Component;
 
-class AppLayout extends Component
+class App extends Component
 {
 
     public function render()
