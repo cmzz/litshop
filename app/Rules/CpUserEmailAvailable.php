@@ -27,6 +27,6 @@ class CpUserEmailAvailable implements Rule
      */
     public function message()
     {
-        return 'A user with this email already exists.';
+        return __('该邮箱已被占用.');
     }
 }

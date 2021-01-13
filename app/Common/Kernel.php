@@ -13,7 +13,7 @@ class Kernel extends HttpKernel
      *
      * @var array
      */
-    protected $middleware = [
+    protected  $middleware = [
         // \LitShop\Http\Middleware\TrustHosts::class,
         \LitShop\Common\Middleware\TrustProxies::class,
         \Fruitcake\Cors\HandleCors::class,
@@ -66,6 +66,7 @@ class Kernel extends HttpKernel
      */
     protected $routeMiddleware = [
         'auth' => \LitShop\Common\Middleware\Authenticate::class,
+        'cp.auth' => \LitShop\Common\Middleware\CpAuthenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,

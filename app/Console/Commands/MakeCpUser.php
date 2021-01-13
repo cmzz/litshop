@@ -4,7 +4,8 @@ namespace LitShop\Console\Commands;
 
 use Illuminate\Console\Command;
 use LitShop\Console\ValidatesInput;
-use LitShop\Rules\EmailAvailable;
+use LitShop\CP\Services\AdminUserService;
+use LitShop\Rules\CpUserEmailAvailable;
 use Symfony\Component\Console\Input\InputArgument;
 
 class MakeCpUser extends Command
@@ -12,25 +13,29 @@ class MakeCpUser extends Command
     use ValidatesInput;
 
     protected $name = 'cp:make:user';
-
-    protected $description = 'Create a new cp user';
-
+    protected $description = '创建一个后台用户.';
     protected $email;
-
     protected $data = [];
+    protected AdminUserService $adminUserService;
+
+    public function __construct(AdminUserService $adminUserService)
+    {
+        parent::__construct();
+        $this->adminUserService = $adminUserService;
+    }
 
     public function handle()
     {
+        $this->info(__('您正在创建一个可用于登陆管理后台的用户.'));
+
         if ($this->email = $this->argument('email')) {
             return $this->createUser();
         }
 
-        // Otherwise, interactively prompt for data and create user..
         $this
             ->promptEmail()
             ->promptName()
             ->promptPassword()
-            ->promptSuper()
             ->createUser();
     }
 
@@ -50,31 +55,9 @@ class MakeCpUser extends Command
         return $this;
     }
 
-    /**
-     * Prompt for a name.
-     *
-     * @return $this
-     */
     protected function promptName()
     {
-        if ($this->hasSeparateNameFields()) {
-            return $this->promptSeparateNameFields();
-        }
-
-        $this->data['name'] = $this->ask('Name', false);
-
-        return $this;
-    }
-
-    /**
-     * Prompt for first name and last name separately.
-     *
-     * @return $this
-     */
-    protected function promptSeparateNameFields()
-    {
-        $this->data['first_name'] = $this->ask('First Name', false);
-        $this->data['last_name'] = $this->ask('Last Name', false);
+        $this->data['name'] = $this->ask('姓名', false);
 
         return $this;
     }
@@ -91,24 +74,20 @@ class MakeCpUser extends Command
             return;
         }
 
-        User::make()
-            ->email($this->email)
-            ->data($this->data)
-            ->save();
+        try {
+            $this->adminUserService->createUser(array_merge(['email' => $this->email], $this->data));
+        } catch (\Throwable $e) {
+            $this->error(__('创建用户失败'));
+            $this->error($e->getMessage());
+            return;
+        }
 
-        $this->info('User created successfully.');
+        $this->info(__('后台用户创建成功'));
     }
 
     protected function emailValidationFails()
     {
-        return $this->validationFails($this->email, ['required', new EmailAvailable, 'email']);
-    }
-
-    protected function hasSeparateNameFields()
-    {
-        $fields = User::blueprint()->fields()->all();
-
-        return $fields->has('first_name') && $fields->has('last_name');
+        return $this->validationFails($this->email, ['required', new CpUserEmailAvailable(), 'email']);
     }
 
     protected function getArguments()

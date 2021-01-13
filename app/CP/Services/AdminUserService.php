@@ -4,9 +4,9 @@
 namespace LitShop\CP\Services;
 
 
-use App\Events\CP\AdminUserCreated;
-use App\Models\AdminUser;
-use App\Exceptions\InvalidArgumentException;
+use LitShop\Events\CP\AdminUserCreated;
+use LitShop\Models\AdminUser;
+use LitShop\Exceptions\InvalidArgumentException;
 use Throwable;
 use Validator;
 
@@ -26,8 +26,17 @@ class AdminUserService
         $rules = [
             'email' => 'required|email',
             'password' => 'required|min:6',
-            'name' => 'required'
+            'name' => 'required',
+            'nickname' => 'string'
         ];
+
+        if (!data_get($data, 'nickname') && data_get($data, 'name'))
+            $data['nickname'] = $data['name'];
+
+        if (!isset($data[AdminUser::STATUS]))
+            $data[AdminUser::STATUS] = AdminUser::STATUS_NORMAL;
+
+        $data[AdminUser::PASSWORD] = \Hash::make($data[AdminUser::PASSWORD]);
 
         $validator = Validator::make($data, $rules);
         throw_if($validator->fails(), new InvalidArgumentException());

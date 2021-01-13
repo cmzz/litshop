@@ -5,7 +5,6 @@ namespace LitShop\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
-use Laravel\Sanctum\HasApiTokens;
 
 /**
  * App\Models\AdminUser
@@ -47,9 +46,25 @@ use Laravel\Sanctum\HasApiTokens;
  */
 class AdminUser extends Authenticatable
 {
-    use HasApiTokens;
     use HasFactory;
     use Notifiable;
+
+    public const STATUS_NORMAL = 1;
+
+    public const ID = 'id';
+    public const NAME = 'name';
+    public const NICKNAME = 'nickname';
+    public const STATUS = 'status';
+    public const EMAIL = 'email';
+    public const PHONE = 'phone';
+    public const EMAIL_VERIFIED_AT = 'email_verified_at';
+    public const PHONE_VERIFIED_AT = 'phone_verified_at';
+    public const PASSWORD = 'password';
+    public const REMEMBER_TOKEN = 'remember_token';
+    public const AVATAR = 'avatar';
+    public const CREATED_AT = 'created_at';
+    public const UPDATED_AT = 'updated_at';
+
 
     /**
      * The attributes that are mass assignable.
@@ -57,9 +72,19 @@ class AdminUser extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        self::ID,
+        self::NAME,
+        self::NICKNAME,
+        self::STATUS,
+        self::EMAIL,
+        self::PHONE,
+        self::EMAIL_VERIFIED_AT,
+        self::PHONE_VERIFIED_AT,
+        self::PASSWORD,
+        self::REMEMBER_TOKEN,
+        self::AVATAR,
+        self::CREATED_AT,
+        self::UPDATED_AT,
     ];
 
     /**

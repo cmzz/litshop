@@ -2,7 +2,7 @@
 
 namespace LitShop\CP\Auth;
 
-use App\Models\AdminUser;
+use LitShop\Models\AdminUser;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Admin;
 use Livewire\Component;
@@ -22,18 +22,18 @@ class Login extends Component
         try {
             $adminUser = AdminUser::whereEmail($loginData['email'])->firstOrFail();
         } catch (ModelNotFoundException $exception) {
-            return $this->addError('email', '用户未注册或密码错误');
+            return $this->addError('email', __('用户不存在或密码错误'));
         }
 
         if (\Hash::check($adminUser->password, $loginData['password'])) {
-            return $this->addError('email', '用户未注册或密码错误');
+            return $this->addError('email', __('用户不存在或密码错误'));
         }
 
         Admin::login($adminUser);
 
-        $this->notify('登陆成功!');
+        $this->notify(__('登陆成功!'));
 
-        return route('cp.index');
+        return redirect(route('cp.index'));
     }
 
     public function render()
