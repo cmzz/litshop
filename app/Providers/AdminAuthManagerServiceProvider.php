@@ -1,8 +1,8 @@
 <?php
 
-namespace App\Providers;
+namespace LitShop\Providers;
 
-use App\Core\AdminAuthManager;
+use LitShop\Core\AdminAuthManager;
 use Illuminate\Support\ServiceProvider;
 
 class AdminAuthManagerServiceProvider extends ServiceProvider

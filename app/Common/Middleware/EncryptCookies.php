@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Common\Middleware;
+namespace LitShop\Common\Middleware;
 
 use Illuminate\Cookie\Middleware\EncryptCookies as Middleware;
 

@@ -1,17 +1,16 @@
 <?php
 
-namespace App\CP\Auth;
+namespace LitShop\CP\Auth;
 
 use App\Models\AdminUser;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
-use Illuminate\Support\Facades\Log;
 use Admin;
 use Livewire\Component;
 
 class Login extends Component
 {
-    public $email = '';
-    public $password = '';
+    public string $email = '';
+    public string $password = '';
 
     public function login()
     {

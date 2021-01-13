@@ -1,6 +1,6 @@
 <?php
 
-use App\CP\Auth\Login;
+use LitShop\CP\Auth\Login;
 use Illuminate\Support\Facades\Route;
 
 Route::name('cp.')->group(function() {

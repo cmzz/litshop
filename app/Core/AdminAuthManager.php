@@ -1,5 +1,5 @@
 <?php
-namespace App\Core;
+namespace LitShop\Core;
 
 use Illuminate\Auth\AuthManager;
 

@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Providers;
+namespace LitShop\Providers;
 
 use Illuminate\Support\Facades\Broadcast;
 use Illuminate\Support\ServiceProvider;

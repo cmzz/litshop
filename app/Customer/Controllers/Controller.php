@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Customer\Controllers;
+namespace LitShop\Customer\Controllers;
 
 use Illuminate\Foundation\Auth\Access\AuthorizesRequests;
 use Illuminate\Foundation\Bus\DispatchesJobs;

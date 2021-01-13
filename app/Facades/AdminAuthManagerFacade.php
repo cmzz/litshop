@@ -1,7 +1,7 @@
 <?php
 
 
-namespace App\Core\Support\Facade;
+namespace LitShop\Facades;
 
 
 use Illuminate\Support\Facades\Facade;

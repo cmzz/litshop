@@ -1,7 +1,7 @@
 <?php
 
-use App\Core\Support\Facade\AdminAuthManagerFacade;
-use App\Providers\AdminAuthManagerServiceProvider;
+use LitShop\Facades\AdminAuthManagerFacade;
+use LitShop\Providers\AdminAuthManagerServiceProvider;
 
 return [
 
@@ -172,12 +172,12 @@ return [
         /*
          * Application Service Providers...
          */
-        App\Providers\AppServiceProvider::class,
-        App\Providers\AuthServiceProvider::class,
-        // App\Providers\BroadcastServiceProvider::class,
-        App\Providers\EventServiceProvider::class,
-        App\Providers\RouteServiceProvider::class,
-        App\Providers\FortifyServiceProvider::class,
+        LitShop\Providers\AppServiceProvider::class,
+        LitShop\Providers\AuthServiceProvider::class,
+        // LitShop\Providers\BroadcastServiceProvider::class,
+        LitShop\Providers\EventServiceProvider::class,
+        LitShop\Providers\RouteServiceProvider::class,
+//        LitShop\Providers\FortifyServiceProvider::class,
 
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         AdminAuthManagerServiceProvider::class,

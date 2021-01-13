@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Common\Middleware;
+namespace LitShop\Common\Middleware;
 
 use Fideloper\Proxy\TrustProxies as Middleware;
 use Illuminate\Http\Request;
