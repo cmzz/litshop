@@ -5,14 +5,9 @@ namespace LitShop\CP;
 use Admin;
 use LitShop\Models\AdminUser;
 
-class Dashboard extends BaseComponent
+class Dashboard extends BaseCpComponent
 {
     public AdminUser $user;
-
-    public function mount()
-    {
-        $this->user = Admin::user();
-    }
 
     public function render()
     {

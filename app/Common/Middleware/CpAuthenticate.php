@@ -1,4 +1,5 @@
 <?php
+
 namespace LitShop\Common\Middleware;
 
 use Closure;

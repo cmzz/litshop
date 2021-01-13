@@ -1,5 +1,4 @@
 <?php
-
 namespace LitShop\Console;
 
 use Illuminate\Console\Scheduling\Schedule;

@@ -19,20 +19,15 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="完成了登陆">
-      <change afterPath="$PROJECT_DIR$/app/CP/BaseComponent.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/View/Components/Layouts/CpAuth.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/layouts/cpauth.blade.php" afterDir="false" />
+    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="增加logout">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CP/Auth/Login.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Auth/Login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/CP/BaseComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/BaseCpComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/CP/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/AdminUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AdminUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/View/Components/Layouts/AppLayout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Layouts/App.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/View/Components/Layouts/CpLayout.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/View/Components/Layouts/Cp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cp/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/dashboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/base.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/cp.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cp.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Common/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/CpAuthenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Common/Middleware/CpAuthenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/MakeCpUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/MakeCpUser.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Core/AdminAuthManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/AdminAuthManager.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -231,7 +226,7 @@
       <workItem from="1610374230803" duration="984000" />
       <workItem from="1610375233250" duration="3355000" />
       <workItem from="1610417704928" duration="14041000" />
-      <workItem from="1610507068143" duration="10385000" />
+      <workItem from="1610507068143" duration="11528000" />
     </task>
     <task id="LOCAL-00001" summary="完成登陆">
       <created>1610377172489</created>
@@ -268,7 +263,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610518565320</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="增加logout">
+      <created>1610524097675</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1610524097675</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +292,8 @@
     <MESSAGE value="完成登陆" />
     <MESSAGE value="调整了代码与目录结构" />
     <MESSAGE value="完成了登陆" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成了登陆" />
+    <MESSAGE value="增加logout" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加logout" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1177" y="-512" key="#com.intellij.ide.util.MemberChooser" timestamp="1610098903083">
@@ -301,11 +304,11 @@
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="313" y="39" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610079456469" />
-    <state x="-1305" y="-553" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610520609653">
-      <screen x="-1920" y="-720" width="1920" height="1057" />
+    <state x="461" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610528156357">
+      <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="-1305" y="-553" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610520609653" />
-    <state x="461" y="162" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833@0.23.1440.833" timestamp="1610446092778" />
+    <state x="461" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833@0.23.1440.833" timestamp="1610528156357" />
     <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610523485988">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>

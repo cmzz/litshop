@@ -39,11 +39,6 @@ class MakeCpUser extends Command
             ->createUser();
     }
 
-    /**
-     * Prompt for an email address.
-     *
-     * @return $this
-     */
     protected function promptEmail()
     {
         $this->email = $this->ask('Email');
