@@ -20,14 +20,23 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="增加logout">
+      <change afterPath="$PROJECT_DIR$/app/Core/Navigation/Nav.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Core/Navigation/NavItem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Core/Support/FluentGetterSetter.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Core/Support/Traits/FluentlyGetsAndSets.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/menus.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cp/partition/desktop/menus.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cp/partition/desktop/userinfo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cp/partition/logo.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cp/partition/mobile/menus.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CP/BaseComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/BaseCpComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CP/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Common/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/CpAuthenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Common/Middleware/CpAuthenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/MakeCpUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/MakeCpUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/AdminAuthManager.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/AdminAuthManager.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/cash.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/download.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/inbox.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/plus.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/trash.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/upload.blade.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/cp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/cp.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -176,26 +185,26 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/View/Components/Layouts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/View/Components/Layouts" />
-      <recent name="$PROJECT_DIR$/resources/views/layouts" />
-      <recent name="$PROJECT_DIR$/app/Rules" />
-      <recent name="$PROJECT_DIR$/app/Console" />
-      <recent name="$PROJECT_DIR$/app/Console/Commands" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/cp/partition/mobile" />
+      <recent name="$PROJECT_DIR$/resources/views/cp/partition" />
       <recent name="$PROJECT_DIR$/resources/views/cp" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/Support" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/app/Core/Support/Traits" />
+      <recent name="$PROJECT_DIR$/app/Core/Support" />
       <recent name="$PROJECT_DIR$/app/View/Components/Layouts" />
-      <recent name="$PROJECT_DIR$/app/CP/Auth" />
+      <recent name="$PROJECT_DIR$/resources/views/layouts" />
     </key>
   </component>
   <component name="RunManager">
@@ -226,7 +235,8 @@
       <workItem from="1610374230803" duration="984000" />
       <workItem from="1610375233250" duration="3355000" />
       <workItem from="1610417704928" duration="14041000" />
-      <workItem from="1610507068143" duration="11528000" />
+      <workItem from="1610507068143" duration="11561000" />
+      <workItem from="1610528671934" duration="8792000" />
     </task>
     <task id="LOCAL-00001" summary="完成登陆">
       <created>1610377172489</created>
@@ -270,7 +280,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610524097675</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="增加logout">
+      <created>1610528648450</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1610528648450</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,17 +350,19 @@
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610079472177" />
-    <state x="-1331" y="-556" key="NewPhpClassDialog" timestamp="1610523473381">
-      <screen x="-1920" y="-720" width="1920" height="1057" />
+    <state x="316" y="-1197" key="NewPhpClassDialog" timestamp="1610548563049">
+      <screen x="-469" y="-1417" width="2560" height="1417" />
     </state>
-    <state x="-1331" y="-556" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610523473381" />
+    <state x="-1331" y="-556" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610534120720" />
     <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098698732" />
+    <state x="316" y="-1197" key="NewPhpClassDialog/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610548563049" />
     <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833@0.23.1440.833" timestamp="1610443280645" />
-    <state x="510" y="365" key="NewPhpFileDialog" timestamp="1610444300209">
-      <screen x="0" y="23" width="1440" height="833" />
+    <state x="438" y="-835" key="NewPhpFileDialog" timestamp="1610548594972">
+      <screen x="-469" y="-1417" width="2560" height="1417" />
     </state>
+    <state x="-1240" y="-286" key="NewPhpFileDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610532047405" />
     <state x="510" y="365" key="NewPhpFileDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610078687035" />
-    <state x="438" y="-835" key="NewPhpFileDialog/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610375869358" />
+    <state x="438" y="-835" key="NewPhpFileDialog/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610548594972" />
     <state x="510" y="365" key="NewPhpFileDialog/0.23.1440.833@0.23.1440.833" timestamp="1610444300209" />
     <state x="251" y="78" key="SettingsEditor" timestamp="1610373547769">
       <screen x="0" y="23" width="1440" height="833" />
