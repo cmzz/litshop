@@ -4,7 +4,7 @@ namespace LitShop\Console\Commands;
 
 use Illuminate\Console\Command;
 
-class ConvertHeriocon extends Command
+class ConvertHeroicon extends Command
 {
     /**
      * The name and signature of the console command.
@@ -42,7 +42,7 @@ class ConvertHeriocon extends Command
 
         foreach (glob($path."*.svg") as $filename) {
             $contents = file_get_contents($filename);
-            $s = '<svg {{ $attributes->merge([\'class\' => \'inline-block w-5 h-5\']) }} fill="currentColor" stroke="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">';
+            $s = '<svg {{ $attributes->merge([\'class\' => \'inline-block w-5 h-5\']) }} fill="none" stroke="currentColor" aria-hidden="true" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">';
             $contents = preg_replace('/(<svg.*>)/iUs', $s, $contents);
 
             $iconName = basename($filename, '.svg');

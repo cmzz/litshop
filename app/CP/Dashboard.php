@@ -2,8 +2,8 @@
 
 namespace LitShop\CP;
 
-use Admin;
 use LitShop\Models\AdminUser;
+use Nav;
 
 class Dashboard extends BaseCpComponent
 {

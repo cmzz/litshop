@@ -10,7 +10,7 @@ trait FluentlyGetsAndSets
      * @param string $property
      * @return FluentGetterSetter
      */
-    public function fluentlyGetOrSet($property)
+    public function getOrSet($property): FluentGetterSetter
     {
         return new FluentGetterSetter($this, $property);
     }

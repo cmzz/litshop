@@ -1,7 +1,9 @@
 <?php
 
 use LitShop\Facades\AdminAuthManagerFacade;
+use LitShop\Facades\NavFacade;
 use LitShop\Providers\AdminAuthManagerServiceProvider;
+use LitShop\Providers\NavServiceProvider;
 
 return [
 
@@ -181,7 +183,7 @@ return [
 
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         AdminAuthManagerServiceProvider::class,
-
+        NavServiceProvider::class,
     ],
 
     /*
@@ -235,7 +237,7 @@ return [
         'View' => Illuminate\Support\Facades\View::class,
 
         'Admin' => AdminAuthManagerFacade::class,
-
+        'Nav' => NavFacade::class,
     ],
 
 ];

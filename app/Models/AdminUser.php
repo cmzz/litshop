@@ -49,6 +49,8 @@ class AdminUser extends Authenticatable
     use HasFactory;
     use Notifiable;
 
+    protected $connection = 'cp';
+
     public const STATUS_NORMAL = 1;
 
     public const ID = 'id';
