@@ -122,6 +122,12 @@ class Nav
         return $this;
     }
 
+    /**
+     * 从配置文件创建菜单
+     *
+     * @param array|null $config
+     * @return $this
+     */
     public function buildFromConfig(array $config = null): self
     {
         if ($config) {

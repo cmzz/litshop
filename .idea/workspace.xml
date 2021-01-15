@@ -20,12 +20,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="进一步完善二级菜单">
+      <change afterPath="$PROJECT_DIR$/app/Core/Support/ui_helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/secondaray-menu/nav-item.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/components/secondaray-menu/nav.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CP/BaseCpComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/BaseCpComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Core/Navigation/Nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Navigation/Nav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Core/Navigation/NavItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Navigation/NavItem.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Core/Support/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Support/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/menus.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/menus.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input/checkbox.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/checkbox.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input/date.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/date.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input/file-upload.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/file-upload.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input/group.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/group.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input/money.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/money.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input/rich-text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/rich-text.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input/select.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/select.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input/text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/text.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/components/input/textarea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/textarea.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cp/goods/goods-manage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/goods/goods-manage.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cp/partition/desktop/secondary-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/partition/desktop/secondary-sidebar.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/cp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/cp.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -175,26 +189,26 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/vendor" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/resources/views/components/menu" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/app/Providers" />
-      <recent name="$PROJECT_DIR$/resources" />
-      <recent name="$PROJECT_DIR$/app/Core/Support/Traits" />
-      <recent name="$PROJECT_DIR$/app/Core/Support" />
-      <recent name="$PROJECT_DIR$/app/View/Components/Layouts" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/cp/partition/mobile" />
       <recent name="$PROJECT_DIR$/resources/views/cp/partition" />
       <recent name="$PROJECT_DIR$/resources/views/cp" />
       <recent name="$PROJECT_DIR$/app" />
       <recent name="$PROJECT_DIR$/app/Support" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/resources/views/components/menu" />
+      <recent name="$PROJECT_DIR$/app/Providers" />
+      <recent name="$PROJECT_DIR$/resources" />
+      <recent name="$PROJECT_DIR$/app/Core/Support/Traits" />
+      <recent name="$PROJECT_DIR$/app/Core/Support" />
     </key>
   </component>
   <component name="RunManager">
@@ -228,7 +242,7 @@
       <workItem from="1610507068143" duration="11561000" />
       <workItem from="1610528671934" duration="10436000" />
       <workItem from="1610551336918" duration="31003000" />
-      <workItem from="1610677320487" duration="10432000" />
+      <workItem from="1610677320487" duration="19994000" />
     </task>
     <task id="LOCAL-00001" summary="完成登陆">
       <created>1610377172489</created>
@@ -307,7 +321,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610683599701</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="进一步完善二级菜单">
+      <created>1610688713169</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1610688713169</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -381,17 +402,21 @@
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610079472177" />
-    <state x="-1331" y="-556" key="NewPhpClassDialog" timestamp="1610681675601">
+    <state x="-1433" y="-450" key="IDE.errors.dialog" timestamp="1610691489136">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1331" y="-556" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610681675601" />
+    <state x="-1433" y="-450" key="IDE.errors.dialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610691489136" />
+    <state x="-1331" y="-556" key="NewPhpClassDialog" timestamp="1610691595039">
+      <screen x="-1920" y="-720" width="1920" height="1057" />
+    </state>
+    <state x="-1331" y="-556" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610691595039" />
     <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098698732" />
     <state x="316" y="-1197" key="NewPhpClassDialog/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610548563049" />
     <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833@0.23.1440.833" timestamp="1610443280645" />
-    <state x="-1240" y="-286" key="NewPhpFileDialog" timestamp="1610680524337">
+    <state x="-1240" y="-286" key="NewPhpFileDialog" timestamp="1610692016964">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1240" y="-286" key="NewPhpFileDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610680524337" />
+    <state x="-1240" y="-286" key="NewPhpFileDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610692016964" />
     <state x="510" y="365" key="NewPhpFileDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610078687035" />
     <state x="438" y="-835" key="NewPhpFileDialog/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610548594972" />
     <state x="510" y="365" key="NewPhpFileDialog/0.23.1440.833@0.23.1440.833" timestamp="1610444300209" />
@@ -411,20 +436,20 @@
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
     <state x="-1360" y="-456" key="Vcs.Push.Dialog.v2/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610596957091" />
-    <state x="-1384" y="-531" width="847" height="754" key="find.popup" timestamp="1610628991483">
+    <state x="-1384" y="-531" width="847" height="754" key="find.popup" timestamp="1610692118911">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1384" y="-531" width="847" height="754" key="find.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610628991483" />
+    <state x="-1384" y="-531" width="847" height="754" key="find.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610692118911" />
     <state x="402" y="172" width="635" height="594" key="find.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610078417838" />
     <state x="402" y="172" width="635" height="594" key="find.popup/0.23.1440.833@0.23.1440.833" timestamp="1610508258093" />
     <state x="-946" y="-444" width="356" height="455" key="refactoring.ChangeSignatureDialog" timestamp="1610682433070">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
     <state x="-946" y="-444" width="356" height="455" key="refactoring.ChangeSignatureDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610682433070" />
-    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup" timestamp="1610686144924">
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup" timestamp="1610698598769">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610686144924" />
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610698598769" />
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098707563" />
     <state x="215" y="-1150" width="1192" height="1150" key="search.everywhere.popup/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610377252483" />
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833@0.23.1440.833" timestamp="1610675924811" />

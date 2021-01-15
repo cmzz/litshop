@@ -22,10 +22,55 @@ return [
             'order' => 0,
             'children' => [
                 [
+                    'name' => '订单管理',
+                    'active' => '',
+                    'order' => 0,
+                    'section' => 'trade',
+                    'children' => [
+                        [
+                            'name' => '全部订单',
+                            'active' => '',
+                            'order' => 0,
+                            'section' => 'trade',
+                            'route' => [
+                                'cp.index'
+                            ]
+                        ],
+                        [
+                            'name' => '退款订单',
+                            'active' => '',
+                            'order' => 10,
+                            'section' => 'trade',
+                            'route' => [
+                                'cp.index'
+                            ]
+                        ],
+                        [
+                            'name' => '售后订单',
+                            'active' => '',
+                            'order' => 20,
+                            'section' => 'trade',
+                            'route' => [
+                                'cp.index'
+                            ]
+                        ],
+                        [
+                            'name' => '已关闭订单',
+                            'active' => '',
+                            'order' => 30,
+                            'section' => 'trade',
+                            'route' => [
+                                'cp.index'
+                            ]
+                        ],
+                    ]
+                ],
+
+                [
                     'name' => '商品管理',
                     'active' => '',
                     'section' => 'goods',
-                    'order' => 0,
+                    'order' => 1,
                     'isDefault' => true,
                     'route' => [
                         'cp.goods.manage'

@@ -78,14 +78,15 @@
                     <!-- End main area -->
                 </main>
 
+{{--                @livewire(\LitShop\CP\SecondarySidebar::class)--}}
+
                 @if($topMenu->hasChildren())
-                <aside class="hidden relative xl:order-first xl:flex xl:flex-col flex-shrink-0 w-48 border-r border-gray-200">
-                    <!-- Start secondary column (hidden on smaller screens) -->
-                    <div class="absolute inset-0 py-6 px-3 lg:px-4">
+                    <aside class="hidden relative xl:order-first xl:flex xl:flex-col flex-shrink-0 w-48 border-r border-gray-200">
+                        <!-- Start secondary column (hidden on smaller screens) -->
+                        <div class="absolute inset-0 py-6 px-3 lg:px-4">
                         @include('cp.partition.desktop.secondary-sidebar')
-                    </div>
-                    <!-- End secondary column -->
-                </aside>
+                        </div>
+                    </aside>
                 @endif
             </div>
         </div>

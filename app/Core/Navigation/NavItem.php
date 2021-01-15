@@ -145,7 +145,7 @@ class NavItem
         return $this->getOrSet('view')->value($view);
     }
 
-    public function isDefault(bool $isDefault = false)
+    public function isDefault(bool $isDefault = null)
     {
         return $this->getOrSet('isDefault')->value($isDefault);
     }
@@ -198,21 +198,13 @@ class NavItem
         return $this->getOrSet('leaf')->value($leaf);
     }
 
-    public function isLeaf($leaf = null): bool
+    public function isLeaf(): bool
     {
-        if ($this->parent) {
-            return false;
-        }
-
-        return true;
+        return $this->parent ? false :true;
     }
 
     public function hasChildren(): bool
     {
-        if (count($this->children) > 0) {
-            return true;
-        }
-
-        return false;
+        return count($this->children) > 0;
     }
 }
