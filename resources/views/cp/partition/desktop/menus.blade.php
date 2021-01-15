@@ -2,7 +2,6 @@
     <div class="flex items-center flex-shrink-0 px-4">
         <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-900-text.svg" alt="Workflow">
     </div>
-
     <nav class="mt-5 flex-1" aria-label="Sidebar">
         <div class="px-2 space-y-1">
             @if($menus && is_array($menus))

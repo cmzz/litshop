@@ -19,262 +19,18 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="增加 heriocons">
-      <change afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Common/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Facades/NavFacade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Providers/NavServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
+    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="完成菜单">
+      <change afterPath="$PROJECT_DIR$/app/Core/Support/helpers.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/cp/partition/desktop/secondary-sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/CP/BaseCpComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/BaseCpComponent.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CP/Dashboard.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Dashboard.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Console/Commands/ConvertHeriocon.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/ConvertHeroicon.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Core/Navigation/Nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Navigation/Nav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Core/Navigation/NavItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Navigation/NavItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/Support/Traits/FluentlyGetsAndSets.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Support/Traits/FluentlyGetsAndSets.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/AdminUser.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/AdminUser.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Shop/Controllers/Controller.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/menus.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/menus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/js/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/public/js/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/academic-cap.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/academic-cap.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/adjustments.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/adjustments.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/annotation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/annotation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/archive.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/archive.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-circle-down.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-circle-down.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-circle-left.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-circle-left.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-circle-right.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-circle-right.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-circle-up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-circle-up.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-down.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-down.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-left.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-left.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-narrow-down.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-narrow-down.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-narrow-left.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-narrow-left.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-narrow-right.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-narrow-right.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-narrow-up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-narrow-up.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-right.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-right.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrow-up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrow-up.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/arrows-expand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/arrows-expand.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/at-symbol.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/at-symbol.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/backspace.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/backspace.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/badge-check.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/badge-check.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/ban.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/ban.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/beaker.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/beaker.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/bell.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/bell.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/book-open.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/book-open.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/bookmark-alt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/bookmark-alt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/bookmark.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/bookmark.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/briefcase.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/briefcase.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/cake.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/cake.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/calculator.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/calculator.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/calendar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/calendar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/camera.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/camera.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/cash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/cash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chart-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chart-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chart-pie.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chart-pie.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chart-square-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chart-square-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chat-alt-2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chat-alt-2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chat-alt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chat-alt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chat.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chat.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/check-circle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/check-circle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/check.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/check.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chevron-double-down.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chevron-double-down.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chevron-double-left.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chevron-double-left.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chevron-double-right.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chevron-double-right.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chevron-double-up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chevron-double-up.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chevron-down.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chevron-down.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chevron-left.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chevron-left.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chevron-right.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chevron-right.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chevron-up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chevron-up.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/chip.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/chip.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/clipboard-check.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/clipboard-check.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/clipboard-copy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/clipboard-copy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/clipboard-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/clipboard-list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/clipboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/clipboard.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/clock.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/clock.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/cloud-download.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/cloud-download.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/cloud-upload.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/cloud-upload.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/cloud.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/cloud.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/code.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/code.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/cog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/cog.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/collection.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/collection.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/color-swatch.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/color-swatch.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/credit-card.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/credit-card.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/cube-transparent.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/cube-transparent.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/cube.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/cube.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/currency-bangladeshi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/currency-bangladeshi.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/currency-dollar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/currency-dollar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/currency-euro.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/currency-euro.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/currency-pound.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/currency-pound.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/currency-rupee.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/currency-rupee.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/currency-yen.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/currency-yen.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/cursor-click.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/cursor-click.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/database.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/database.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/desktop-computer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/desktop-computer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/device-mobile.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/device-mobile.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/device-tablet.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/device-tablet.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/document-add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/document-add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/document-download.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/document-download.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/document-duplicate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/document-duplicate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/document-remove.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/document-remove.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/document-report.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/document-report.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/document-search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/document-search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/document-text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/document-text.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/document.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/document.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/dots-circle-horizontal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/dots-circle-horizontal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/dots-horizontal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/dots-horizontal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/dots-vertical.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/dots-vertical.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/download.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/download.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/duplicate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/duplicate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/emoji-happy.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/emoji-happy.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/emoji-sad.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/emoji-sad.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/exclamation-circle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/exclamation-circle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/exclamation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/exclamation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/external-link.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/external-link.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/eye-off.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/eye-off.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/eye.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/eye.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/fast-forward.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/fast-forward.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/film.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/film.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/filter.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/filter.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/finger-print.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/finger-print.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/fire.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/fire.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/flag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/flag.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/folder-add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/folder-add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/folder-download.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/folder-download.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/folder-open.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/folder-open.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/folder-remove.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/folder-remove.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/folder.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/folder.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/gift.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/gift.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/globe-alt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/globe-alt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/globe.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/globe.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/hand.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/hand.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/hashtag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/hashtag.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/heart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/heart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/home.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/home.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/identification.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/identification.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/inbox-in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/inbox-in.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/inbox.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/inbox.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/information-circle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/information-circle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/key.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/key.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/library.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/library.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/light-bulb.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/light-bulb.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/lightning-bolt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/lightning-bolt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/link.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/link.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/location-marker.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/location-marker.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/lock-closed.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/lock-closed.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/lock-open.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/lock-open.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/login.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/login.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/logout.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/logout.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/mail-open.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/mail-open.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/mail.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/mail.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/map.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/map.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/menu-alt-1.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/menu-alt-1.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/menu-alt-2.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/menu-alt-2.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/menu-alt-3.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/menu-alt-3.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/menu-alt-4.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/menu-alt-4.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/menu.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/menu.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/microphone.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/microphone.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/minus-circle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/minus-circle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/minus-sm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/minus-sm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/minus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/minus.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/moon.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/moon.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/music-note.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/music-note.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/newspaper.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/newspaper.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/office-building.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/office-building.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/paper-airplane.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/paper-airplane.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/paper-clip.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/paper-clip.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/pause.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/pause.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/pencil-alt.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/pencil-alt.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/pencil.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/pencil.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/phone-incoming.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/phone-incoming.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/phone-missed-call.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/phone-missed-call.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/phone-outgoing.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/phone-outgoing.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/phone.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/phone.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/photograph.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/photograph.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/play.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/play.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/plus-circle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/plus-circle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/plus-sm.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/plus-sm.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/plus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/plus.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/presentation-chart-bar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/presentation-chart-bar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/presentation-chart-line.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/presentation-chart-line.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/printer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/printer.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/puzzle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/puzzle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/qrcode.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/qrcode.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/question-mark-circle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/question-mark-circle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/receipt-refund.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/receipt-refund.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/receipt-tax.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/receipt-tax.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/refresh.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/refresh.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/reply.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/reply.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/rewind.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/rewind.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/rss.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/rss.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/save-as.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/save-as.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/save.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/save.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/scale.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/scale.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/scissors.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/scissors.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/search-circle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/search-circle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/search.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/selector.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/selector.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/server.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/server.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/share.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/share.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/shield-check.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/shield-check.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/shield-exclamation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/shield-exclamation.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/shopping-bag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/shopping-bag.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/shopping-cart.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/shopping-cart.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/sort-ascending.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/sort-ascending.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/sort-descending.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/sort-descending.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/sparkles.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/sparkles.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/speakerphone.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/speakerphone.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/star.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/star.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/status-offline.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/status-offline.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/status-online.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/status-online.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/stop.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/stop.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/sun.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/sun.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/support.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/support.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/switch-horizontal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/switch-horizontal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/switch-vertical.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/switch-vertical.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/table.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/table.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/tag.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/tag.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/template.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/template.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/terminal.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/terminal.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/thumb-down.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/thumb-down.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/thumb-up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/thumb-up.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/ticket.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/ticket.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/translate.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/translate.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/trash.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/trash.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/trending-down.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/trending-down.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/trending-up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/trending-up.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/truck.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/truck.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/upload.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/upload.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/user-add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/user-add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/user-circle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/user-circle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/user-group.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/user-group.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/user-remove.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/user-remove.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/user.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/user.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/users.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/users.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/variable.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/variable.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/video-camera.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/video-camera.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/view-boards.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/view-boards.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/view-grid-add.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/view-grid-add.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/view-grid.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/view-grid.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/view-list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/view-list.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/volume-off.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/volume-off.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/volume-up.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/volume-up.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/wifi.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/wifi.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/x-circle.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/x-circle.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/x.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/x.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/zoom-in.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/zoom-in.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/icon/zoom-out.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/icon/zoom-out.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cp/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/dashboard.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cp/partition/desktop/menus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/partition/desktop/menus.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/layouts/cp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/cp.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/cp.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/cp.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/shop.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -476,7 +232,8 @@
       <workItem from="1610417704928" duration="14041000" />
       <workItem from="1610507068143" duration="11561000" />
       <workItem from="1610528671934" duration="10436000" />
-      <workItem from="1610551336918" duration="28336000" />
+      <workItem from="1610551336918" duration="31003000" />
+      <workItem from="1610677320487" duration="6243000" />
     </task>
     <task id="LOCAL-00001" summary="完成登陆">
       <created>1610377172489</created>
@@ -534,7 +291,21 @@
       <option name="project" value="LOCAL" />
       <updated>1610549711914</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="完成菜单">
+      <created>1610629823837</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1610629823837</updated>
+    </task>
+    <task id="LOCAL-00010" summary="完成菜单">
+      <created>1610629830266</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1610629830266</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -558,7 +329,8 @@
     <MESSAGE value="完成了登陆" />
     <MESSAGE value="增加logout" />
     <MESSAGE value="增加 heriocons" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加 heriocons" />
+    <MESSAGE value="完成菜单" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成菜单" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1320" y="-392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610592684600">
@@ -578,10 +350,10 @@
     </state>
     <state x="-1654" y="-720" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610598757473" />
     <state x="461" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833@0.23.1440.833" timestamp="1610528156357" />
-    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610608189213">
+    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610681876670">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610608189213" />
+    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610681876670" />
     <state x="520" y="-812" key="ComposerInitDialogKey" timestamp="1610202573769">
       <screen x="-469" y="-1417" width="2560" height="1417" />
     </state>
@@ -606,17 +378,17 @@
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610079472177" />
-    <state x="-1331" y="-556" key="NewPhpClassDialog" timestamp="1610614923914">
+    <state x="-1331" y="-556" key="NewPhpClassDialog" timestamp="1610681675601">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1331" y="-556" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610614923914" />
+    <state x="-1331" y="-556" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610681675601" />
     <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098698732" />
     <state x="316" y="-1197" key="NewPhpClassDialog/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610548563049" />
     <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833@0.23.1440.833" timestamp="1610443280645" />
-    <state x="-1240" y="-286" key="NewPhpFileDialog" timestamp="1610614929583">
+    <state x="-1240" y="-286" key="NewPhpFileDialog" timestamp="1610680524337">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1240" y="-286" key="NewPhpFileDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610614929583" />
+    <state x="-1240" y="-286" key="NewPhpFileDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610680524337" />
     <state x="510" y="365" key="NewPhpFileDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610078687035" />
     <state x="438" y="-835" key="NewPhpFileDialog/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610548594972" />
     <state x="510" y="365" key="NewPhpFileDialog/0.23.1440.833@0.23.1440.833" timestamp="1610444300209" />
@@ -642,16 +414,16 @@
     <state x="-1384" y="-531" width="847" height="754" key="find.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610628991483" />
     <state x="402" y="172" width="635" height="594" key="find.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610078417838" />
     <state x="402" y="172" width="635" height="594" key="find.popup/0.23.1440.833@0.23.1440.833" timestamp="1610508258093" />
-    <state x="-946" y="-444" width="356" height="455" key="refactoring.ChangeSignatureDialog" timestamp="1610446585366">
+    <state x="-946" y="-444" width="356" height="455" key="refactoring.ChangeSignatureDialog" timestamp="1610682433070">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-946" y="-444" width="356" height="455" key="refactoring.ChangeSignatureDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610446585366" />
-    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup" timestamp="1610629518697">
+    <state x="-946" y="-444" width="356" height="455" key="refactoring.ChangeSignatureDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610682433070" />
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup" timestamp="1610681661331">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610629518697" />
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610681661331" />
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098707563" />
     <state x="215" y="-1150" width="1192" height="1150" key="search.everywhere.popup/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610377252483" />
-    <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833@0.23.1440.833" timestamp="1610508131135" />
+    <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833@0.23.1440.833" timestamp="1610675924811" />
   </component>
 </project>

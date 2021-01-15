@@ -43,11 +43,10 @@
 
         <!-- Static sidebar for desktop -->
         <div class="hidden lg:flex lg:flex-shrink-0">
-            <div class="flex flex-col w-48">
+            <div class="flex flex-col w-40">
                 <!-- Sidebar component, swap this element with another sidebar if you like -->
                 <div class="flex flex-col h-0 flex-1 border-r border-gray-200 bg-gray-100">
                     @include('cp.partition.desktop.menus')
-
                     @include('cp.partition.desktop.userinfo')
                 </div>
             </div>
@@ -78,17 +77,19 @@
                     </div>
                     <!-- End main area -->
                 </main>
+
+                @if($topMenu->hasChildren())
                 <aside class="hidden relative xl:order-first xl:flex xl:flex-col flex-shrink-0 w-48 border-r border-gray-200">
                     <!-- Start secondary column (hidden on smaller screens) -->
-                    <div class="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
-                        <div class="h-full border-4 border-gray-200 border-dashed rounded-lg"></div>
+                    <div class="absolute inset-0 py-6 px-3 lg:px-4">
+                        @include('cp.partition.desktop.secondary-sidebar')
                     </div>
                     <!-- End secondary column -->
                 </aside>
+                @endif
             </div>
         </div>
     </div>
-
 
     <x-notification />
 </x-layouts.base>

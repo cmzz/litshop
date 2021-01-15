@@ -32,7 +32,7 @@ class NavItem
     protected NavItem $leaf;
 
     // parent menu
-    protected NavItem $parent;
+    protected ?NavItem $parent = null;
 
     public function __construct()
     {
@@ -196,5 +196,23 @@ class NavItem
     public function leaf($leaf = null)
     {
         return $this->getOrSet('leaf')->value($leaf);
+    }
+
+    public function isLeaf($leaf = null): bool
+    {
+        if ($this->parent) {
+            return false;
+        }
+
+        return true;
+    }
+
+    public function hasChildren(): bool
+    {
+        if (count($this->children) > 0) {
+            return true;
+        }
+
+        return false;
     }
 }

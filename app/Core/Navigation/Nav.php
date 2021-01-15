@@ -11,7 +11,8 @@ class Nav
     protected array $items = [];
 
     // 当前页面的叶子菜单
-    protected $activeLeafItem = null;
+    protected ?NavItem $activeLeafItem = null;
+    protected ?NavItem $activeTopItem = null;
 
     // 包含从顶层才到到叶子菜单的全部层级路径
     public Collection $path;
@@ -21,7 +22,7 @@ class Nav
         $this->path = collect([]);
     }
 
-    public function create($conf)
+    public function create($conf): self
     {
         $item = $this->buildItem($conf);
         $this->add($item);
@@ -29,7 +30,7 @@ class Nav
         return $item;
     }
 
-    public function path()
+    public function path(): Collection
     {
         return $this->path;
     }
@@ -40,7 +41,7 @@ class Nav
     }
 
     # 格式化
-    private function findLatestForParentItem(&$items = [], $l = 0, &$parents = [], &$leaf = null)
+    private function findLatestForParentItem(&$items = [], $l = 0, &$parents = [], &$leaf = null): array
     {
         /** @var NavItem $item */
         foreach ($items as &$item) {
@@ -73,7 +74,7 @@ class Nav
         return $items;
     }
 
-    public function add(NavItem $item = null, NavItem $parent = null): Nav
+    public function add(NavItem $item = null, NavItem $parent = null): self
     {
         if ($parent) {
             /** @var NavItem $v */
@@ -89,20 +90,30 @@ class Nav
         return $this;
     }
 
-    public function sort()
+    public function sort(): self
     {
-        $this->items = $this->sortItems($this->items);
+        recursionSortArray($this->items,
+            static fn ($item) => $item->order(),
+            static fn ($item) => $item->children(),
+            static fn (&$item, $sub) => $item->replaceChildren($sub)
+        );
+
         $this->items = $this->findLatestForParentItem($this->items);
-        $this->findCurrentLeafItem($this->items);
+        $this->findActiveLeafItem($this->items);
         return $this;
     }
 
-    public function current()
+    public function activeLeafMenu(): NavItem
     {
         return $this->activeLeafItem;
     }
 
-    private function findCurrentLeafItem(array &$items, array &$parents = [], $l = 0)
+    public function activeTopMenu(): NavItem
+    {
+        return $this->activeTopItem;
+    }
+
+    private function findActiveLeafItem(array &$items, array &$parents = [], $l = 0): array
     {
         if ($items) {
             /** @var NavItem $item */
@@ -113,14 +124,18 @@ class Nav
 
                 if ($children = $item->children()) {
                     $parents[] = $item;
-                    $this->findCurrentLeafItem($children, $parents, $l + 1);
+                    $this->findActiveLeafItem($children, $parents, $l + 1);
                 } else {
                     if ($item->activeStatus()) {
                         $this->activeLeafItem = $item;
                         $parents[] = $item;
 
                         if ($parents) {
-                            foreach ($parents as $parent) {
+                            foreach ($parents as $i => $parent) {
+                                if ($i === 0) {
+                                    $this->activeTopItem = $parent;
+                                }
+
                                 $this->path->add($parent->id());
                             }
 
@@ -135,7 +150,8 @@ class Nav
         return $items;
     }
 
-    private function sortItems(array $items) {
+    private function sortItems(array $items): array
+    {
         if (is_array($items) && $items) {
             $items = collect($items)->sortBy(function ($v) {
                 return $v->order();
@@ -154,17 +170,17 @@ class Nav
         return $items;
     }
 
-    public function items()
+    public function items(): array
     {
         return $this->items;
     }
 
-    public function setGroup($group = null)
+    public function setGroup($group = null): self
     {
         return $this;
     }
 
-    public function buildFromConfig(array $config = null)
+    public function buildFromConfig(array $config = null): self
     {
         if ($config) {
             foreach ($config as $v) {
@@ -207,8 +223,8 @@ class Nav
     /**
      * 返回有权限访问的菜单
      */
-    public function authorizeItems()
+    public function authorizeItems(): array
     {
-
+        return $this->items();
     }
 }
