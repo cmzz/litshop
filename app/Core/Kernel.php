@@ -1,6 +1,6 @@
 <?php
 
-namespace LitShop\Common;
+namespace LitShop\Core;
 
 use Illuminate\Foundation\Http\Kernel as HttpKernel;
 
@@ -14,12 +14,12 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected  $middleware = [
-        \LitShop\Common\Middleware\TrustHosts::class,
-        \LitShop\Common\Middleware\TrustProxies::class,
+        \LitShop\Core\Middleware\TrustHosts::class,
+        \LitShop\Core\Middleware\TrustProxies::class,
         \Fruitcake\Cors\HandleCors::class,
-        \LitShop\Common\Middleware\PreventRequestsDuringMaintenance::class,
+        \LitShop\Core\Middleware\PreventRequestsDuringMaintenance::class,
         \Illuminate\Foundation\Http\Middleware\ValidatePostSize::class,
-        \LitShop\Common\Middleware\TrimStrings::class,
+        \LitShop\Core\Middleware\TrimStrings::class,
         \Illuminate\Foundation\Http\Middleware\ConvertEmptyStringsToNull::class,
     ];
 
@@ -30,12 +30,12 @@ class Kernel extends HttpKernel
      */
     protected $middlewareGroups = [
         'web' => [
-            \LitShop\Common\Middleware\EncryptCookies::class,
+            \LitShop\Core\Middleware\EncryptCookies::class,
             \Illuminate\Cookie\Middleware\AddQueuedCookiesToResponse::class,
             \Illuminate\Session\Middleware\StartSession::class,
 //            \Laravel\Jetstream\Http\Middleware\AuthenticateSession::class,
             \Illuminate\View\Middleware\ShareErrorsFromSession::class,
-            \LitShop\Common\Middleware\VerifyCsrfToken::class,
+            \LitShop\Core\Middleware\VerifyCsrfToken::class,
             \Illuminate\Routing\Middleware\SubstituteBindings::class,
         ],
 
@@ -65,12 +65,12 @@ class Kernel extends HttpKernel
      * @var array
      */
     protected $routeMiddleware = [
-        'auth' => \LitShop\Common\Middleware\Authenticate::class,
-        'cp.auth' => \LitShop\Common\Middleware\CpAuthenticate::class,
+        'auth' => \LitShop\Core\Middleware\Authenticate::class,
+        'cp.auth' => \LitShop\Core\Middleware\CpAuthenticate::class,
         'auth.basic' => \Illuminate\Auth\Middleware\AuthenticateWithBasicAuth::class,
         'cache.headers' => \Illuminate\Http\Middleware\SetCacheHeaders::class,
         'can' => \Illuminate\Auth\Middleware\Authorize::class,
-        'guest' => \LitShop\Common\Middleware\RedirectIfAuthenticated::class,
+        'guest' => \LitShop\Core\Middleware\RedirectIfAuthenticated::class,
         'password.confirm' => \Illuminate\Auth\Middleware\RequirePassword::class,
         'signed' => \Illuminate\Routing\Middleware\ValidateSignature::class,
         'throttle' => \Illuminate\Routing\Middleware\ThrottleRequests::class,

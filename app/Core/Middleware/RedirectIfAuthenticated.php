@@ -1,6 +1,6 @@
 <?php
 
-namespace LitShop\Common\Middleware;
+namespace LitShop\Core\Middleware;
 
 use LitShop\Providers\RouteServiceProvider;
 use Closure;

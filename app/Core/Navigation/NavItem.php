@@ -21,7 +21,7 @@ class NavItem
     protected string $active = '';
     protected string $view = '';
     protected string $route = '';
-    protected bool $isDefault = false;
+    protected bool $showOnUi = true;
     protected bool $isActive = false;
     protected array $routeParams = [];
 
@@ -196,6 +196,11 @@ class NavItem
     public function leaf($leaf = null)
     {
         return $this->getOrSet('leaf')->value($leaf);
+    }
+
+    public function showOnUi($showOnUi = null)
+    {
+        return $this->getOrSet('showOnUi')->value($showOnUi);
     }
 
     public function isLeaf(): bool

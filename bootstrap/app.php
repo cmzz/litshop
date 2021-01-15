@@ -28,7 +28,7 @@ $app = new Illuminate\Foundation\Application(
 
 $app->singleton(
     Illuminate\Contracts\Http\Kernel::class,
-    LitShop\Common\Kernel::class
+    LitShop\Core\Kernel::class
 );
 
 $app->singleton(

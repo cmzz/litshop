@@ -20,26 +20,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="进一步完善二级菜单">
-      <change afterPath="$PROJECT_DIR$/app/Core/Support/ui_helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/secondaray-menu/nav-item.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/components/secondaray-menu/nav.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Core/Ext/ExtType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Core/Ext/GoodsManage/GoodsManageProcessor.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/Navigation/Nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Navigation/Nav.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/CP/Services/AdminUserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Services/AdminUserService.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/Authenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/CpAuthenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/CpAuthenticate.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/EncryptCookies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/PreventRequestsDuringMaintenance.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/TrimStrings.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/TrustHosts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/TrustHosts.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/TrustProxies.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Common/helpers.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Core/Navigation/NavItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Navigation/NavItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/Support/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Support/helpers.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/menus.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/menus.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/input/checkbox.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/checkbox.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/input/date.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/date.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/input/file-upload.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/file-upload.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/input/group.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/group.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/input/money.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/money.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/input/rich-text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/rich-text.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/input/select.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/select.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/input/text.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/text.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/components/input/textarea.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/components/input/textarea.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cp/goods/goods-manage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/goods/goods-manage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cp/partition/desktop/secondary-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/partition/desktop/secondary-sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/cp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/cp.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/litshopkit/composer.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -197,11 +195,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Core" />
       <recent name="$PROJECT_DIR$/resources/views/cp/partition/mobile" />
       <recent name="$PROJECT_DIR$/resources/views/cp/partition" />
       <recent name="$PROJECT_DIR$/resources/views/cp" />
       <recent name="$PROJECT_DIR$/app" />
-      <recent name="$PROJECT_DIR$/app/Support" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/resources/views/components/menu" />
@@ -242,7 +240,7 @@
       <workItem from="1610507068143" duration="11561000" />
       <workItem from="1610528671934" duration="10436000" />
       <workItem from="1610551336918" duration="31003000" />
-      <workItem from="1610677320487" duration="19994000" />
+      <workItem from="1610677320487" duration="26720000" />
     </task>
     <task id="LOCAL-00001" summary="完成登陆">
       <created>1610377172489</created>
@@ -328,7 +326,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610688713169</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="进一步完善二级菜单">
+      <created>1610702561910</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1610702561910</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -406,11 +411,11 @@
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
     <state x="-1433" y="-450" key="IDE.errors.dialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610691489136" />
-    <state x="-1331" y="-556" key="NewPhpClassDialog" timestamp="1610691595039">
-      <screen x="-1920" y="-720" width="1920" height="1057" />
+    <state x="442" y="152" key="NewPhpClassDialog" timestamp="1610711722869">
+      <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="-1331" y="-556" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610691595039" />
-    <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098698732" />
+    <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610711722869" />
     <state x="316" y="-1197" key="NewPhpClassDialog/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610548563049" />
     <state x="442" y="152" key="NewPhpClassDialog/0.23.1440.833@0.23.1440.833" timestamp="1610443280645" />
     <state x="-1240" y="-286" key="NewPhpFileDialog" timestamp="1610692016964">
@@ -436,20 +441,20 @@
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
     <state x="-1360" y="-456" key="Vcs.Push.Dialog.v2/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610596957091" />
-    <state x="-1384" y="-531" width="847" height="754" key="find.popup" timestamp="1610692118911">
-      <screen x="-1920" y="-720" width="1920" height="1057" />
+    <state x="402" y="166" width="732" height="690" key="find.popup" timestamp="1610710203540">
+      <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="-1384" y="-531" width="847" height="754" key="find.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610692118911" />
-    <state x="402" y="172" width="635" height="594" key="find.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610078417838" />
+    <state x="402" y="166" width="732" height="690" key="find.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610710203540" />
     <state x="402" y="172" width="635" height="594" key="find.popup/0.23.1440.833@0.23.1440.833" timestamp="1610508258093" />
     <state x="-946" y="-444" width="356" height="455" key="refactoring.ChangeSignatureDialog" timestamp="1610682433070">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
     <state x="-946" y="-444" width="356" height="455" key="refactoring.ChangeSignatureDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610682433070" />
-    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup" timestamp="1610698598769">
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup" timestamp="1610702604038">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610698598769" />
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610702604038" />
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098707563" />
     <state x="215" y="-1150" width="1192" height="1150" key="search.everywhere.popup/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610377252483" />
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833@0.23.1440.833" timestamp="1610675924811" />

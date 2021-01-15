@@ -12,10 +12,6 @@ use Validator;
 
 class AdminUserService
 {
-    public function __construct()
-    {
-    }
-
     /**
      * @param array $data
      * @return AdminUser

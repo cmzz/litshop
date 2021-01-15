@@ -1,6 +1,6 @@
 <?php
 
-namespace LitShop\Common\Middleware;
+namespace LitShop\Core\Middleware;
 
 use Illuminate\Foundation\Http\Middleware\VerifyCsrfToken as Middleware;
 
