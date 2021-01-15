@@ -19,18 +19,13 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="完成菜单">
-      <change afterPath="$PROJECT_DIR$/app/Core/Support/helpers.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/cp/partition/desktop/secondary-sidebar.blade.php" afterDir="false" />
+    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="进一步完善二级菜单">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/CP/BaseCpComponent.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/BaseCpComponent.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Core/Navigation/Nav.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Navigation/Nav.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Core/Navigation/NavItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Navigation/NavItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Shop/Controllers/Controller.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cp/partition/desktop/menus.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/partition/desktop/menus.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/cp.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/cp.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/shop.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/shop.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Core/Support/helpers.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Support/helpers.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/cp/partition/desktop/secondary-sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/partition/desktop/secondary-sidebar.blade.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -233,7 +228,7 @@
       <workItem from="1610507068143" duration="11561000" />
       <workItem from="1610528671934" duration="10436000" />
       <workItem from="1610551336918" duration="31003000" />
-      <workItem from="1610677320487" duration="6243000" />
+      <workItem from="1610677320487" duration="10432000" />
     </task>
     <task id="LOCAL-00001" summary="完成登陆">
       <created>1610377172489</created>
@@ -305,7 +300,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610629830266</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="进一步完善二级菜单">
+      <created>1610683599701</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1610683599701</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,7 +332,8 @@
     <MESSAGE value="增加logout" />
     <MESSAGE value="增加 heriocons" />
     <MESSAGE value="完成菜单" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成菜单" />
+    <MESSAGE value="进一步完善二级菜单" />
+    <option name="LAST_COMMIT_MESSAGE" value="进一步完善二级菜单" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1320" y="-392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610592684600">
@@ -350,10 +353,10 @@
     </state>
     <state x="-1654" y="-720" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610598757473" />
     <state x="461" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833@0.23.1440.833" timestamp="1610528156357" />
-    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610681876670">
+    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610687485761">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610681876670" />
+    <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610687485761" />
     <state x="520" y="-812" key="ComposerInitDialogKey" timestamp="1610202573769">
       <screen x="-469" y="-1417" width="2560" height="1417" />
     </state>
@@ -418,10 +421,10 @@
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
     <state x="-946" y="-444" width="356" height="455" key="refactoring.ChangeSignatureDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610682433070" />
-    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup" timestamp="1610681661331">
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup" timestamp="1610686144924">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610681661331" />
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610686144924" />
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098707563" />
     <state x="215" y="-1150" width="1192" height="1150" key="search.everywhere.popup/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610377252483" />
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833@0.23.1440.833" timestamp="1610675924811" />

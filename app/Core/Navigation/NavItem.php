@@ -29,7 +29,7 @@ class NavItem
     protected int $level = 0;
 
     // 叶子菜单元素 (isDefault | the first element)
-    protected NavItem $leaf;
+    protected ?NavItem $leaf = null;
 
     // parent menu
     protected ?NavItem $parent = null;

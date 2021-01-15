@@ -16,9 +16,12 @@ class BaseCpComponent extends Component
     {
         $this->user = Admin::user();
 
-        $menus = Nav::buildFromConfig(config('menus.cp'))->sort()->items();
+        # init menus
+        Nav::buildFromConfig(config('menus.cp'))
+            ->sort()
+            ->format();
 
-        \View::share('menus', $menus);
+        \View::share('menus', Nav::authorizeItems());
         \View::share('leafMenu', Nav::activeLeafMenu());
         \View::share('topMenu', Nav::activeTopMenu());
     }

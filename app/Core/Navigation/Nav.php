@@ -22,7 +22,7 @@ class Nav
         $this->path = collect([]);
     }
 
-    public function create($conf): self
+    public function create($conf): NavItem
     {
         $item = $this->buildItem($conf);
         $this->add($item);
@@ -38,40 +38,6 @@ class Nav
     public function inPath($id): bool
     {
         return $this->path->has($id);
-    }
-
-    # 格式化
-    private function findLatestForParentItem(&$items = [], $l = 0, &$parents = [], &$leaf = null): array
-    {
-        /** @var NavItem $item */
-        foreach ($items as &$item) {
-            if ($l === 0) {
-                $parents = [];
-                $leaf = null;
-            }
-
-            $childre = $item->children();
-            if (count($childre) > 0) {
-                $parents[] = $item;
-                $this->findLatestForParentItem($childre, $l + 1, $parents, $leaf);
-
-                if (!$leaf) {
-                    $leaf = array_shift($childre);
-                }
-            } else {
-                if ($item->isDefault()) {
-                    $leaf = $item;
-                }
-            }
-
-            if ($l === 0 && $parents) {
-                foreach ($parents as &$parent) {
-                    $parent->leaf($leaf);
-                }
-            }
-        }
-
-        return $items;
     }
 
     public function add(NavItem $item = null, NavItem $parent = null): self
@@ -98,8 +64,41 @@ class Nav
             static fn (&$item, $sub) => $item->replaceChildren($sub)
         );
 
-        $this->items = $this->findLatestForParentItem($this->items);
-        $this->findActiveLeafItem($this->items);
+        return $this;
+    }
+
+    public function format(): self
+    {
+        createLinkToLeafBy(
+            $this->items,
+            static fn (NavItem &$item) => $item->children(),
+            static fn (NavItem &$item) => $item->isDefault(),
+            static fn (NavItem &$item, NavItem &$leaf) => $item->leaf($leaf)
+        );
+
+        $activeMenus = [];
+        pathToLeafBy(
+            $this->items,
+            $activeMenus,
+            static fn(&$item) => $item->children(),
+            static fn(&$item) => $item->activeStatus(),
+            0
+        );
+
+        if ($len = count($activeMenus)) {
+            foreach ($activeMenus as $i => $menu) {
+                if ($i === 0) {
+                    $this->activeTopItem = $menu;
+                }
+
+                if($i === $len - 1) {
+                    $this->activeLeafItem = $menu;
+                }
+
+                $this->path->add($menu->id());
+            }
+        }
+
         return $this;
     }
 
@@ -111,63 +110,6 @@ class Nav
     public function activeTopMenu(): NavItem
     {
         return $this->activeTopItem;
-    }
-
-    private function findActiveLeafItem(array &$items, array &$parents = [], $l = 0): array
-    {
-        if ($items) {
-            /** @var NavItem $item */
-            foreach ($items as &$item) {
-                if ($l === 0) {
-                    $parents = [];
-                }
-
-                if ($children = $item->children()) {
-                    $parents[] = $item;
-                    $this->findActiveLeafItem($children, $parents, $l + 1);
-                } else {
-                    if ($item->activeStatus()) {
-                        $this->activeLeafItem = $item;
-                        $parents[] = $item;
-
-                        if ($parents) {
-                            foreach ($parents as $i => $parent) {
-                                if ($i === 0) {
-                                    $this->activeTopItem = $parent;
-                                }
-
-                                $this->path->add($parent->id());
-                            }
-
-                            $parents = [];
-                            break;
-                        }
-                    }
-                }
-            }
-        }
-
-        return $items;
-    }
-
-    private function sortItems(array $items): array
-    {
-        if (is_array($items) && $items) {
-            $items = collect($items)->sortBy(function ($v) {
-                return $v->order();
-            })->all();
-
-            /** @var NavItem $item */
-            foreach ($items as &$item) {
-                $children = $item->children();
-                if (is_array($children) && $children) {
-                    $childItems = $this->sortItems($children);
-                    $item->replaceChildren($childItems);
-                }
-            }
-        }
-
-        return $items;
     }
 
     public function items(): array
