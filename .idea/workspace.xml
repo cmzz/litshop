@@ -19,25 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="进一步完善二级菜单">
-      <change afterPath="$PROJECT_DIR$/app/Core/Ext/ExtType.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Core/Ext/GoodsManage/GoodsManageProcessor.php" afterDir="false" />
+    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="扩展接口定义">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CP/Services/AdminUserService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Services/AdminUserService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Kernel.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/Authenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/Authenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/CpAuthenticate.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/CpAuthenticate.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/EncryptCookies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/EncryptCookies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/PreventRequestsDuringMaintenance.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/PreventRequestsDuringMaintenance.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/TrimStrings.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/TrimStrings.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/TrustHosts.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/TrustHosts.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/TrustProxies.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/TrustProxies.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Middleware/VerifyCsrfToken.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Common/helpers.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/Navigation/NavItem.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Navigation/NavItem.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bootstrap/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/bootstrap/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/packages/litshopkit/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -240,7 +224,7 @@
       <workItem from="1610507068143" duration="11561000" />
       <workItem from="1610528671934" duration="10436000" />
       <workItem from="1610551336918" duration="31003000" />
-      <workItem from="1610677320487" duration="26720000" />
+      <workItem from="1610677320487" duration="27088000" />
     </task>
     <task id="LOCAL-00001" summary="完成登陆">
       <created>1610377172489</created>
@@ -333,7 +317,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610702561910</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="扩展接口定义">
+      <created>1610711982171</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1610711982172</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -359,7 +350,8 @@
     <MESSAGE value="增加 heriocons" />
     <MESSAGE value="完成菜单" />
     <MESSAGE value="进一步完善二级菜单" />
-    <option name="LAST_COMMIT_MESSAGE" value="进一步完善二级菜单" />
+    <MESSAGE value="扩展接口定义" />
+    <option name="LAST_COMMIT_MESSAGE" value="扩展接口定义" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1320" y="-392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610592684600">
@@ -437,10 +429,11 @@
     </state>
     <state width="500" height="400" key="SwitcherDM/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610588035345" />
     <state width="620" height="445" key="SwitcherDM/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610550061327" />
-    <state x="-1360" y="-456" key="Vcs.Push.Dialog.v2" timestamp="1610596957091">
-      <screen x="-1920" y="-720" width="1920" height="1057" />
+    <state x="420" y="231" key="Vcs.Push.Dialog.v2" timestamp="1610711985786">
+      <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="-1360" y="-456" key="Vcs.Push.Dialog.v2/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610596957091" />
+    <state x="420" y="231" key="Vcs.Push.Dialog.v2/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610711985786" />
     <state x="402" y="166" width="732" height="690" key="find.popup" timestamp="1610710203540">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
