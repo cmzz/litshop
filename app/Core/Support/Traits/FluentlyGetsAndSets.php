@@ -7,7 +7,7 @@ use LitShop\Core\Support\FluentGetterSetter;
 trait FluentlyGetsAndSets
 {
     /**
-     * @param string $property
+     * @param $property
      * @return FluentGetterSetter
      */
     public function getOrSet($property): FluentGetterSetter

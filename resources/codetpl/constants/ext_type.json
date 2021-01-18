@@ -1,0 +1,20 @@
+{
+    "fileName": "ExtType.php",
+    "namespace": "LitShop\\Core\\Ext",
+    "class_doc": "扩展的类型定义",
+
+    "constants":[
+        ["custom", 10100000, "完全自定义"],
+        ["distribution_channel", 20200000, "销售渠道"],
+        ["marketing", 20300000, "营销玩法"],
+        ["customer_maintain", 20400000, "客群维护"],
+        ["business_analysis", 20500000, "经营分析"],
+        ["order_manage", 20600000, "订单管理"],
+        ["goods_manage", 20700000, "商品管理"],
+        ["stock_manage", 20800000, "库存管理"],
+        ["payment_kit", 20900000, "支付工具"],
+        ["shipping_tools", 20110000, "物流仓储/配送"],
+        ["tool_kit", 20120000, "其他工具"],
+        ["template", 30100000, "模板"]
+    ]
+}

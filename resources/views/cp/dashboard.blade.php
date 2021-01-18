@@ -1,4 +1,4 @@
-<div>
+<div class="space-y-6">
     <!-- This example requires Tailwind CSS v2.0+ -->
     <div>
         <h3 class="text-lg leading-6 font-medium text-gray-900">
@@ -85,7 +85,7 @@
         </dl>
     </div>
 
-    <div class="mt-6">
+    <div class="">
         <!-- This example requires Tailwind CSS v2.0+ -->
         <div class="bg-white overflow-hidden shadow rounded-lg">
             <div class="px-4 py-5 sm:p-6">
@@ -94,7 +94,7 @@
         </div>
     </div>
 
-    <div class="lg:flex mt-6 lg:space-x-5">
+    <div class="lg:flex lg:space-x-5">
         <div class="lg:flex-1">
             <h3 class="text-lg leading-6 font-medium text-gray-900">
                 系统信息
