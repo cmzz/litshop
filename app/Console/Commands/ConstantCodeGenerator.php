@@ -98,12 +98,12 @@ class ConstantCodeGenerator extends Command
             $class .= "\t}\n\n";
 
 
-            $class .= "\tpublic static function names() {\n";
+            $class .= "\tpublic static function names(): array {\n";
             $class .= "\t\treturn collect(self::defines)->pluck('0')->toArray();\n";
             $class .= "\t}\n\n";
 
 
-            $class .= "\tpublic static function titles() {\n";
+            $class .= "\tpublic static function titles(): array {\n";
             $class .= "\t\treturn collect(self::defines)->pluck('2')->toArray();\n";
             $class .= "\t}\n\n";
 

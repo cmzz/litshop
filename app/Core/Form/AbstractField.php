@@ -1,14 +1,13 @@
 <?php
-
-
 namespace LitShop\Core\Form;
-
 
 use LitShop\Core\Support\Traits\FluentlyGetsAndSets;
 
 class AbstractField implements FieldInterface
 {
 
+    protected string $showAsterisk;
+    protected string $label;
     protected string $name;
     protected array $rule;
     protected bool $shouOnUI;
@@ -17,6 +16,8 @@ class AbstractField implements FieldInterface
     protected string $helper;
     protected string $autocomplete;
     protected string $icon;
+
+    protected $optionLoader;
 
     use FluentlyGetsAndSets;
 
@@ -58,5 +59,25 @@ class AbstractField implements FieldInterface
     public function icon(?string $icon = null): ?string
     {
         return $this->getOrSet('icon')->value($icon);
+    }
+
+    public function options(?array $options = null): ?array
+    {
+        return $this->getOrSet('options')->value($options);
+    }
+
+    public function optionsLoader(callable $optionLoader)
+    {
+        return $this->options($optionLoader());
+    }
+
+    public function label($label): string
+    {
+        return $this->getOrSet('label')->value($label);
+    }
+
+    public function showAsterisk(?bool $showAsterisk): bool
+    {
+        return $this->getOrSet('showAsterisk')->value($showAsterisk);
     }
 }

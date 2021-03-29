@@ -148,11 +148,11 @@ class ExtType {
 		return collect(self::defines)->keyBy('0')->get($name)[2];
 	}
 
-	public static function names() {
+	public static function names(): array {
 		return collect(self::defines)->pluck('0')->toArray();
 	}
 
-	public static function titles() {
+	public static function titles(): array {
 		return collect(self::defines)->pluck('2')->toArray();
 	}
 

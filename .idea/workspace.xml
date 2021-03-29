@@ -19,27 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="update README.md">
-      <change afterPath="$PROJECT_DIR$/app/Core/Form/AbstractField.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Core/Form/FieldInput.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Core/Form/FieldInterface.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Core/Form/FieldUpload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Core/Support/Attributes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Core/Support/Enum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Core/Support/Traits/EnumHelperTrait.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/codetpl/constants/ext_type.json" afterDir="false" />
+    <list default="true" id="dbd97e8a-9f99-4624-9e48-f8f6e514dcca" name="Default Changelist" comment="增加了一个常量生成辅助命令">
+      <change afterPath="$PROJECT_DIR$/app/Core/Form/FieldCheckBox.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Core/Form/FieldFile.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Core/Form/FieldImage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Core/Form/FieldMultiImage.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Core/Form/FieldMultiSelect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Core/Form/FieldRadioBox.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/Core/Form/FieldSelect.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.phpstorm.meta.php" beforeDir="false" afterPath="$PROJECT_DIR$/.phpstorm.meta.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/CP/Brand/Create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Brand/Create.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/CP/Goods/Create.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/CP/Goods/Create.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Console/Commands/ConstantCodeGenerator.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Console/Commands/ConstantCodeGenerator.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/Core/Ext/ExtType.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Ext/ExtType.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Core/Support/Traits/FluentlyGetsAndSets.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Support/Traits/FluentlyGetsAndSets.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cp/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Core/Form/AbstractField.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Form/AbstractField.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Core/Form/FieldInterface.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Form/FieldInterface.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Core/Form/FieldUpload.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Core/Form/FieldUpload.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/resources/views/cp/goods/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/goods/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/cp/goods/goods-manage.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/cp/goods/goods-manage.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tailwind.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/tailwind.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +184,7 @@
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Core/Support" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/Core/Form" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -197,11 +192,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/app/Core/Form" />
       <recent name="$PROJECT_DIR$/app/Core/Support" />
       <recent name="$PROJECT_DIR$/resources/views/components/menu" />
       <recent name="$PROJECT_DIR$/app/Providers" />
       <recent name="$PROJECT_DIR$/resources" />
-      <recent name="$PROJECT_DIR$/app/Core/Support/Traits" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/Core" />
@@ -243,7 +238,8 @@
       <workItem from="1610528671934" duration="10436000" />
       <workItem from="1610551336918" duration="31003000" />
       <workItem from="1610677320487" duration="27300000" />
-      <workItem from="1610938832599" duration="15245000" />
+      <workItem from="1610938832599" duration="23009000" />
+      <workItem from="1611538652557" duration="1975000" />
     </task>
     <task id="LOCAL-00001" summary="完成登陆">
       <created>1610377172489</created>
@@ -350,7 +346,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610712356259</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="增加了一个常量生成辅助命令">
+      <created>1610970357140</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1610970357140</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -378,26 +381,27 @@
     <MESSAGE value="进一步完善二级菜单" />
     <MESSAGE value="扩展接口定义" />
     <MESSAGE value="update README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="update README.md" />
+    <MESSAGE value="增加了一个常量生成辅助命令" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加了一个常量生成辅助命令" />
   </component>
   <component name="WindowStateProjectService">
     <state x="-1320" y="-392" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610592684600">
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
     <state x="-1320" y="-392" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610592684600" />
-    <state x="557" y="187" key="#com.intellij.ide.util.MemberChooser" timestamp="1610955628296">
-      <screen x="0" y="23" width="1440" height="833" />
+    <state x="-1177" y="-512" key="#com.intellij.ide.util.MemberChooser" timestamp="1611024469662">
+      <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1177" y="-512" key="#com.intellij.ide.util.MemberChooser/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610098903083" />
-    <state x="557" y="187" key="#com.intellij.ide.util.MemberChooser/0.23.1440.833@0.23.1440.833" timestamp="1610955628296" />
+    <state x="-1177" y="-512" key="#com.intellij.ide.util.MemberChooser/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1611024469662" />
+    <state x="557" y="187" key="#com.intellij.ide.util.MemberChooser/0.23.1440.833@0.23.1440.833" timestamp="1611023455858" />
     <state x="313" y="39" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1610079456469">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="313" y="39" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610079456469" />
-    <state x="461" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1610953216664">
-      <screen x="0" y="23" width="1440" height="833" />
+    <state x="-1654" y="-720" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1611036895655">
+      <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1654" y="-720" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610598757473" />
+    <state x="-1654" y="-720" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1611036895655" />
     <state x="461" y="155" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.833@0.23.1440.833" timestamp="1610953216664" />
     <state x="-1222" y="-430" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1610687485761">
       <screen x="-1920" y="-720" width="1920" height="1057" />
@@ -457,11 +461,12 @@
     </state>
     <state width="500" height="400" key="SwitcherDM/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610588035345" />
     <state width="620" height="445" key="SwitcherDM/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610550061327" />
-    <state x="420" y="231" key="Vcs.Push.Dialog.v2" timestamp="1610712358554">
+    <state x="420" y="231" key="Vcs.Push.Dialog.v2" timestamp="1610970362557">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
     <state x="-1360" y="-456" key="Vcs.Push.Dialog.v2/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610596957091" />
     <state x="420" y="231" key="Vcs.Push.Dialog.v2/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610712358554" />
+    <state x="420" y="231" key="Vcs.Push.Dialog.v2/0.23.1440.833@0.23.1440.833" timestamp="1610970362557" />
     <state x="402" y="172" width="635" height="594" key="find.popup" timestamp="1610963289160">
       <screen x="0" y="23" width="1440" height="833" />
     </state>
@@ -472,12 +477,12 @@
       <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
     <state x="-946" y="-444" width="356" height="455" key="refactoring.ChangeSignatureDialog/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610682433070" />
-    <state x="385" y="180" width="670" height="676" key="search.everywhere.popup" timestamp="1610967585136">
-      <screen x="0" y="23" width="1440" height="833" />
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup" timestamp="1611540590260">
+      <screen x="-1920" y="-720" width="1920" height="1057" />
     </state>
-    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1610702604038" />
+    <state x="-1407" y="-521" width="894" height="858" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@-1920.-720.1920.1057" timestamp="1611540590260" />
     <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833/-1920.-720.1920.1057@0.23.1440.833" timestamp="1610098707563" />
     <state x="215" y="-1150" width="1192" height="1150" key="search.everywhere.popup/0.23.1440.833/-469.-1417.2560.1417@-469.-1417.2560.1417" timestamp="1610377252483" />
-    <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833@0.23.1440.833" timestamp="1610967585136" />
+    <state x="385" y="180" width="670" height="676" key="search.everywhere.popup/0.23.1440.833@0.23.1440.833" timestamp="1611023139585" />
   </component>
 </project>
