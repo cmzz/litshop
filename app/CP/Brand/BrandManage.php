@@ -7,7 +7,7 @@ use LitShop\CP\BaseCpComponent as Component;
 
 class BrandManage extends Component
 {
-    public $isVisible = false;
+    public bool $isVisible = false;
 
     public function render()
     {
