@@ -11,7 +11,7 @@ class ConvertHeroicon extends Command
      *
      * @var string
      */
-    protected $signature = 'make:icon';
+    protected $signature = 'tool:codegen:icon';
 
     /**
      * The console command description.

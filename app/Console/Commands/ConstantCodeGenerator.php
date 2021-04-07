@@ -12,7 +12,7 @@ class ConstantCodeGenerator extends Command
      *
      * @var string
      */
-    protected $signature = 'codegen:const';
+    protected $signature = 'tool:codegen:const';
 
     /**
      * The console command description.
@@ -58,7 +58,9 @@ class ConstantCodeGenerator extends Command
 
             $class = "<?php \n";
             $class .= sprintf("namespace %s;\n\n", $namespace);
-            $class .= '//'. data_get($content, 'class_doc') ."\n";
+            $class .= '// 本文件由LitShop工具自动生成，请勿修改\n';
+            $class .= '// \n';
+            $class .= '// '. data_get($content, 'class_doc') ."\n";
             $class .= sprintf("class %s {\n", basename($f, '.php'));
 
             $constDefines = data_get($content, 'constants');
