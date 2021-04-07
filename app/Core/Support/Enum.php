@@ -3,11 +3,11 @@
 
 namespace LitShop\Core\Support;
 
-#[Attribute]
+
 class Enum {
-    private $name;
-    private $value;
-    private $displayTitle;
+    private string $name;
+    private string $value;
+    private string $displayTitle;
 
     public function __construct($displayTitle) {
         $this->displayTitle = $displayTitle;

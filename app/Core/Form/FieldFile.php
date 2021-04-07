@@ -4,7 +4,7 @@
 namespace LitShop\Core\Form;
 
 
-class FieldUpload extends AbstractField
+class FieldFile extends AbstractField
 {
 
 }

@@ -3,3 +3,6 @@
 
 namespace LitShop\Core\Support;
 
+class Attributes {
+
+}

@@ -9,17 +9,17 @@ use ReflectionProperty;
 
 class FluentGetterSetter
 {
-    protected $object;
-    protected $property;
-    protected $getter;
-    protected $setter;
-    protected $afterSetter;
+    protected mixed $object;
+    protected string $property;
+    protected Closure $getter;
+    protected Closure $setter;
+    protected Closure $afterSetter;
 
     /**
      * @param mixed $object
      * @param string $property
      */
-    public function __construct($object, $property)
+    public function __construct(mixed $object, string $property)
     {
         $this->object = $object;
         $this->property = $property;
@@ -29,7 +29,7 @@ class FluentGetterSetter
      * @param Closure $callback
      * @return $this
      */
-    public function getter(Closure $callback)
+    public function getter(Closure $callback): self
     {
         $this->getter = $callback;
 
@@ -40,7 +40,7 @@ class FluentGetterSetter
      * @param Closure $callback
      * @return $this
      */
-    public function setter($callback)
+    public function setter(Closure $callback): self
     {
         $this->setter = $callback;
 
@@ -51,7 +51,7 @@ class FluentGetterSetter
      * @param Closure $callback
      * @return $this
      */
-    public function afterSetter($callback)
+    public function afterSetter(Closure $callback): self
     {
         $this->afterSetter = $callback;
 
@@ -62,7 +62,7 @@ class FluentGetterSetter
      * @param mixed $value
      * @return mixed
      */
-    public function value($value)
+    public function value(mixed $value)
     {
         if (is_null($value)) {
             return $this->runGetterLogic();
@@ -77,7 +77,7 @@ class FluentGetterSetter
      * @param mixed $args
      * @return mixed
      */
-    public function args($args)
+    public function args(mixed $args)
     {
         if (count($args) === 0) {
             return $this->runGetterLogic();
@@ -91,7 +91,7 @@ class FluentGetterSetter
     /**
      * @return mixed
      */
-    protected function runGetterLogic()
+    protected function runGetterLogic(): mixed
     {
         try {
             $value = $this->reflectedProperty()->getValue($this->object);
@@ -109,7 +109,7 @@ class FluentGetterSetter
     /**
      * @param mixed $value
      */
-    protected function runSetterLogic($value)
+    protected function runSetterLogic(mixed $value)
     {
         if ($setter = $this->setter) {
             $value = $setter($value);
@@ -130,7 +130,7 @@ class FluentGetterSetter
      * @return ReflectionProperty
      * @throws ReflectionException
      */
-    protected function reflectedProperty()
+    protected function reflectedProperty(): ReflectionProperty
     {
         $property = (new ReflectionObject($this->object))->getProperty($this->property);
         $property->setAccessible(true);

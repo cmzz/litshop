@@ -2,6 +2,9 @@
 
 namespace LitShop\View\Components\Layouts;
 
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Illuminate\View\Component;
 
 class Base extends Component
@@ -19,9 +22,9 @@ class Base extends Component
     /**
      * Get the view / contents that represent the component.
      *
-     * @return \Illuminate\View\View|string
+     * @return Application|Factory|View
      */
-    public function render()
+    public function render(): Factory|View|Application
     {
         return view('layouts.base');
     }
