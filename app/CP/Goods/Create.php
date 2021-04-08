@@ -3,6 +3,7 @@
 namespace LitShop\CP\Goods;
 
 use Illuminate\Http\Request;
+use Util\FormBuilder\FormBuilder;
 use Util\FormField\FormFieldTypes;
 use LitShop\CP\BaseCpComponent as Component;
 
@@ -126,20 +127,15 @@ class Create extends Component
         ]
     ];
 
+    public array $formFields;
+
     public function mount()
     {
         parent::mount();
 
         if ($this->formConf) {
-            foreach ($this->formConf as $item) {
-                if (isValidityArrayField($item, 'fields')) {
-                    foreach ($item['fields'] as $subItem) {
-
-                    }
-                }
-            }
+            $this->formFields = FormBuilder::build($this->formConf);
         }
-
     }
 
     /**
