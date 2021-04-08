@@ -9,14 +9,15 @@
     "license": "MIT",
     "require": {
         "php": "^8.0",
+        "ext-json": "*",
+        "ext-sodium": "*",
+        "enlightn/enlightn": "^1.21",
         "fideloper/proxy": "^4.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0",
         "laravel/framework": "^8.0",
         "laravel/tinker": "^2.5",
-        "livewire/livewire": "^2.0",
-        "ext-sodium": "*",
-        "ext-json": "*"
+        "livewire/livewire": "^2.0"
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
