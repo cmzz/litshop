@@ -72,7 +72,7 @@
             <div class="flex-1 relative z-0 flex overflow-hidden">
                 <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none xl:order-last bg-gray-100" tabindex="0">
                     <!-- Start main area-->
-                    <div class="absolute inset-0 py-6 px-4 sm:px-6 lg:px-8">
+                    <div class="inset-0 py-6 px-4 sm:px-6 lg:px-8">
                         {{ $slot }}
                     </div>
                     <!-- End main area -->
@@ -82,9 +82,8 @@
 
                 @if($topMenu->hasChildren())
                     <aside class="hidden relative xl:order-first xl:flex xl:flex-col flex-shrink-0 w-48 border-r border-gray-200">
-                        <!-- Start secondary column (hidden on smaller screens) -->
                         <div class="absolute inset-0 py-6 px-3 lg:px-4">
-                        @include('cp.partition.desktop.secondary-sidebar')
+                            @include('cp.partition.desktop.secondary-sidebar')
                         </div>
                     </aside>
                 @endif

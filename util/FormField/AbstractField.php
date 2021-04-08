@@ -1,6 +1,9 @@
 <?php
 namespace Util\FormField;
 
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
 use Util\Support\Traits\FluentlyGetsAndSets;
 
 abstract class AbstractField implements FieldInterface
@@ -20,7 +23,7 @@ abstract class AbstractField implements FieldInterface
 
     use FluentlyGetsAndSets;
 
-    public function name($name): mixed
+    public function name($name = null): mixed
     {
         return $this->getOrSet('name')->value($name);
     }
@@ -81,7 +84,7 @@ abstract class AbstractField implements FieldInterface
     }
 
     /**
-     * @return string
+     * @return View|Factory|string|Application
      */
-    abstract public function render(): string;
+    abstract public function render(): View|Factory|string|Application;
 }

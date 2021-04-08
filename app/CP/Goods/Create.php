@@ -47,7 +47,7 @@ class Create extends Component
                 ], [
                     'showAsterisk' => false,
                     'label' => '商品图',
-                    'type' => FormFieldTypes::MULTI_IMAGE,
+                    'type' => FormFieldTypes::MULTI_IMAGE_UPLOADER,
                     'name' => 'images',
                     'rule' => [],
                 ], [

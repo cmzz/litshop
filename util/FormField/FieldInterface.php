@@ -4,6 +4,10 @@
 namespace Util\FormField;
 
 
+use Illuminate\Contracts\Foundation\Application;
+use Illuminate\Contracts\View\Factory;
+use Illuminate\Contracts\View\View;
+
 interface FieldInterface
 {
     public function showAsterisk(?bool $showAsterisk = null): mixed;
@@ -19,5 +23,5 @@ interface FieldInterface
     public function options(?array $options = null): mixed;
 
     public function optionsLoader(callable $optionLoader);
-    public function render(): string;
+    public function render(): View|Factory|string|Application;
 }
