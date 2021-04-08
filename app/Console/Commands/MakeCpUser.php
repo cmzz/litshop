@@ -5,7 +5,7 @@ namespace LitShop\Console\Commands;
 use Illuminate\Console\Command;
 use LitShop\Console\ValidatesInput;
 use LitShop\CP\Services\AdminUserService;
-use LitShop\Rules\CpUserEmailAvailable;
+use Foundation\Rules\CpUserEmailAvailable;
 use Symfony\Component\Console\Input\InputArgument;
 
 class MakeCpUser extends Command

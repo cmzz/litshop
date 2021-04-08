@@ -3,6 +3,7 @@
 namespace LitShop\CP\Goods;
 
 use Illuminate\Http\Request;
+use Util\FormField\FormFieldTypes;
 use LitShop\CP\BaseCpComponent as Component;
 
 class Create extends Component
@@ -14,44 +15,44 @@ class Create extends Component
                 [
                     'showAsterisk' => false,
                     'label' => '商品类型',
-                    'type' => 'radio',
+                    'type' => FormFieldTypes::RADIO_BOX,
                     'name' => 'shipment_type',
                     'rule' => [],
                 ],
                 [
                     'showAsterisk' => false,
                     'label' => '商品名',
-                    'type' => 'text',
+                    'type' => FormFieldTypes::TEXT,
                     'name' => 'title',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '商品类目',
-                    'type' => 'select',
+                    'type' => FormFieldTypes::SELECT,
                     'name' => 'catalog',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '分享描述',
-                    'type' => 'text',
+                    'type' => FormFieldTypes::TEXT,
                     'name' => 'share_tip',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '商品卖点',
-                    'type' => 'text',
+                    'type' => FormFieldTypes::TEXT,
                     'name' => 'selling_point',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '商品图',
-                    'type' => 'multi_image',
+                    'type' => FormFieldTypes::MULTI_IMAGE,
                     'name' => 'images',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '商品分组',
-                    'type' => 'multi_select',
+                    'type' => FormFieldTypes::MULTI_SELECT,
                     'name' => 'category',
                     'rule' => [],
                 ],
@@ -63,43 +64,43 @@ class Create extends Component
                 [
                     'showAsterisk' => false,
                     'label' => '商品规格',
-                    'type' => 'text',
+                    'type' => FormFieldTypes::TEXT,
                     'name' => 'sku',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '价格',
-                    'type' => 'text',
+                    'type' => FormFieldTypes::TEXT,
                     'name' => 'price',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '划线价',
-                    'type' => 'text',
-                    'name' => '',
+                    'type' => FormFieldTypes::TEXT,
+                    'name' => 'through_line_price',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '库存扣减方式',
-                    'type' => 'text',
+                    'type' => FormFieldTypes::TEXT,
                     'name' => 'msrp',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '库存',
-                    'type' => 'text',
+                    'type' => FormFieldTypes::TEXT,
                     'name' => 'stock',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '商品编码',
-                    'type' => 'text',
+                    'type' => FormFieldTypes::TEXT,
                     'name' => '',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '成本价',
-                    'type' => 'text',
+                    'type' => FormFieldTypes::TEXT,
                     'name' => 'cost',
                     'rule' => [],
                 ],
@@ -111,13 +112,13 @@ class Create extends Component
                 [
                     'showAsterisk' => false,
                     'label' => '售后服务',
-                    'type' => 'text',
-                    'name' => '',
+                    'type' => FormFieldTypes::TEXT,
+                    'name' => 'after_sales_service',
                     'rule' => [],
                 ], [
                     'showAsterisk' => false,
                     'label' => '起售',
-                    'type' => 'text',
+                    'type' => FormFieldTypes::TEXT,
                     'name' => 'moq',
                     'rule' => [],
                 ],
@@ -131,8 +132,11 @@ class Create extends Component
 
         if ($this->formConf) {
             foreach ($this->formConf as $item) {
-                $this->$item['name'] = $item['value'];
-                dd($item);
+                if (isValidityArrayField($item, 'fields')) {
+                    foreach ($item['fields'] as $subItem) {
+
+                    }
+                }
             }
         }
 

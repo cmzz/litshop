@@ -1,9 +1,9 @@
 <?php
 
-use LitShop\Facades\AdminAuthManagerFacade;
-use LitShop\Facades\NavFacade;
-use LitShop\Providers\AdminAuthManagerServiceProvider;
-use LitShop\Providers\NavServiceProvider;
+use Foundation\Facades\AdminAuthManagerFacade;
+use Foundation\Facades\NavFacade;
+use Foundation\Providers\AdminAuthManagerServiceProvider;
+use Foundation\Providers\NavServiceProvider;
 
 return [
 
@@ -174,12 +174,12 @@ return [
         /*
          * Application Service Providers...
          */
-        LitShop\Providers\AppServiceProvider::class,
-        LitShop\Providers\AuthServiceProvider::class,
-        // LitShop\Providers\BroadcastServiceProvider::class,
-        LitShop\Providers\EventServiceProvider::class,
-        LitShop\Providers\RouteServiceProvider::class,
-//        LitShop\Providers\FortifyServiceProvider::class,
+        Foundation\Providers\AppServiceProvider::class,
+        Foundation\Providers\AuthServiceProvider::class,
+        // Foundation\Providers\BroadcastServiceProvider::class,
+        Foundation\Providers\EventServiceProvider::class,
+        Foundation\Providers\RouteServiceProvider::class,
+//        Foundation\Providers\FortifyServiceProvider::class,
 
         Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         AdminAuthManagerServiceProvider::class,

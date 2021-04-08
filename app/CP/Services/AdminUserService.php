@@ -4,9 +4,9 @@
 namespace LitShop\CP\Services;
 
 
-use LitShop\Events\CP\AdminUserCreated;
-use LitShop\Models\AdminUser;
-use LitShop\Exceptions\InvalidArgumentException;
+use Foundation\Events\CP\AdminUserCreated;
+use LitCore\Models\AdminUser;
+use Foundation\Exceptions\InvalidArgumentException;
 use Throwable;
 use Validator;
 

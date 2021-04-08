@@ -1,8 +1,8 @@
 <?php
 
 return [
-    'admin' => [
-        'route_prefix' => 'admin'
+    'cp' => [
+        'route_prefix' => 'cp'
     ],
 
     'customer' => [

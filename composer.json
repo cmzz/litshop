@@ -39,11 +39,14 @@
     "autoload": {
         "psr-4": {
             "LitShop\\": "app/",
+            "Foundation\\": "foundation/",
+            "Util\\": "util/",
+            "LitCore\\": "core/",
             "Database\\Factories\\": "database/factories/",
             "Database\\Seeders\\": "database/seeders/"
         },
         "files":[
-            "app/Core/Support/helpers.php"
+            "util/Support/helpers.php"
         ]
     },
     "autoload-dev": {

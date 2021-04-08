@@ -74,12 +74,12 @@ return [
     'providers' => [
         'users' => [
             'driver' => 'eloquent',
-            'model' => LitShop\Models\User::class,
+            'model' => LitCore\Models\User::class,
         ],
 
         'admin_users' => [
             'driver' => 'eloquent',
-            'model' => LitShop\Models\AdminUser::class,
+            'model' => LitCore\Models\AdminUser::class,
         ],
 
         // 'users' => [
