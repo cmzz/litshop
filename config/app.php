@@ -181,7 +181,6 @@ return [
         Foundation\Providers\RouteServiceProvider::class,
 //        Foundation\Providers\FortifyServiceProvider::class,
 
-        Barryvdh\LaravelIdeHelper\IdeHelperServiceProvider::class,
         AdminAuthManagerServiceProvider::class,
         NavServiceProvider::class,
     ],

@@ -23,6 +23,7 @@ class FormBuilder
                     $field->label(data_get($subItem, 'label'));
                     $field->showAsterisk(data_get($subItem, 'showAsterisk'));
                     $field->rule(data_get($subItem, 'rule'));
+                    $field->options(data_get($subItem, 'options', []));
 
                     array_push($section['fields'], $field);
                 }

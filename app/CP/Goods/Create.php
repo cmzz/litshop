@@ -3,6 +3,7 @@
 namespace LitShop\CP\Goods;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 use Util\FormBuilder\FormBuilder;
 use Util\FormField\FormFieldTypes;
 use LitShop\CP\BaseCpComponent as Component;
@@ -17,7 +18,17 @@ class Create extends Component
                     'showAsterisk' => false,
                     'label' => '商品类型',
                     'type' => FormFieldTypes::RADIO_BOX,
-                    'name' => 'shipment_type',
+                    'name' => 'goods_type',
+                    'options' => [
+                        'goods_type_sw' => [
+                            'title' => '实物商品',
+                            'sub_title' => '(需要物流)',
+                        ],
+                        'goods_type_xn' => [
+                            'title' => '虚拟商品',
+                            'sub_title' => '(无需物流)',
+                        ]
+                    ],
                     'rule' => [],
                 ],
                 [
@@ -132,6 +143,10 @@ class Create extends Component
     public function mount()
     {
         parent::mount();
+
+        Log::info('test');
+        Log::info('test22');
+        Log::info('test333');
 
         if ($this->formConf) {
             $this->formFields = FormBuilder::build($this->formConf);
