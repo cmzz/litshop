@@ -8,10 +8,10 @@ use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Contracts\View\Factory;
 use Illuminate\Contracts\View\View;
 
-class FieldCheckBox extends FieldTextarea
+class FieldTextarea extends AbstractField
 {
     public function render(): View|Factory|string|Application
     {
-        return view('components.fields.checkbox', ['field' => $this]);
+        return view('components.fields.textarea', ['field' => $this]);
     }
 }

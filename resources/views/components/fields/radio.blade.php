@@ -1,13 +1,35 @@
-<div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-start sm:border-t sm:border-gray-200 sm:pt-5">
-    <label for="username" class="block text-sm font-medium text-gray-700 sm:mt-px sm:pt-2">
-        {{ $field->name() }}
-    </label>
-    <div class="mt-1 sm:mt-0 sm:col-span-2">
-        <div class="max-w-lg flex rounded-md shadow-sm">
-              <span class="inline-flex items-center px-3 rounded-l-md border border-r-0 border-gray-300 bg-gray-50 text-gray-500 sm:text-sm">
-                workcation.com/
-              </span>
-            <input type="text" name="username" id="username" autocomplete="username" class="flex-1 block w-full focus:ring-indigo-500 focus:border-indigo-500 min-w-0 rounded-none rounded-r-md sm:text-sm border-gray-300">
-        </div>
+@if($field->showOnUI())
+    <div class="sm:grid sm:grid-cols-3 sm:gap-4 sm:items-baseline">
+        @if($field->label())
+            <div>
+                <div class="text-base font-medium text-gray-900 sm:text-sm sm:text-gray-700" id="label-notifications">
+                    {{ $field->label() }}
+                </div>
+            </div>
+        @endif
+
+        @if(is_array($field->options()) && $field->options())
+            <div class="sm:col-span-2">
+                <div class="max-w-lg">
+                    <div class="mt-4 space-y-4">
+                        @foreach($field->options as $k => $option)
+                            <div class="flex items-center">
+                                <input id="field_{{ $field->name() }}" {{ $k == $field->value() ? 'checked' : '' }} name="{{ $field->name() }}" type="radio" value="{{ $k }}" class="focus:ring-indigo-500 h-4 w-4 text-indigo-600 border-gray-300">
+                                @if($option && is_array($option))
+                                    <label for="push_everything" class="ml-3 block text-sm font-medium text-gray-700">{{ array_shift($option) }}</label>
+                                    @if($option && is_array($option) && count($option) > 0)
+                                        @foreach($option as $v)
+                                            <p class="text-gray-500 text-sm">{{ $v }}</p>
+                                        @endforeach
+                                    @endif
+                                @else
+                                    <label for="push_everything" class="ml-3 block text-sm font-medium text-gray-700">{{ $option }}</label>
+                                @endif
+                            </div>
+                        @endforeach
+                    </div>
+                </div>
+            </div>
+        @endif
     </div>
-</div>
+@endif

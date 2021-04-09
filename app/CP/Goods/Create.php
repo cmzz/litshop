@@ -4,21 +4,23 @@ namespace LitShop\CP\Goods;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
+use LitCore\Models\Goods;
 use Util\FormBuilder\FormBuilder;
 use Util\FormField\FormFieldTypes;
 use LitShop\CP\BaseCpComponent as Component;
 
 class Create extends Component
 {
-    protected array $formConf = [
+    public array $formConf = [
         [
             'section' => '基本信息',
             'fields' => [
                 [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '商品类型',
                     'type' => FormFieldTypes::RADIO_BOX,
                     'name' => 'goods_type',
+                    'value' => 'goods_type_sw',
                     'options' => [
                         'goods_type_sw' => [
                             'title' => '实物商品',
@@ -32,37 +34,41 @@ class Create extends Component
                     'rule' => [],
                 ],
                 [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '商品名',
                     'type' => FormFieldTypes::TEXT,
                     'name' => 'title',
-                    'rule' => [],
+                    'helper' => '请选择合适商品类型',
+                    'palceholder' => '请输入商品标题',
+                    'value' => '8888',
+                    'rule' => ['required', 'string'],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '商品类目',
                     'type' => FormFieldTypes::SELECT,
                     'name' => 'catalog',
                     'rule' => [],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '分享描述',
                     'type' => FormFieldTypes::TEXT,
+                    'value' => '33332',
                     'name' => 'share_tip',
                     'rule' => [],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '商品卖点',
                     'type' => FormFieldTypes::TEXT,
                     'name' => 'selling_point',
                     'rule' => [],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '商品图',
                     'type' => FormFieldTypes::MULTI_IMAGE_UPLOADER,
                     'name' => 'images',
                     'rule' => [],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '商品分组',
                     'type' => FormFieldTypes::MULTI_SELECT,
                     'name' => 'category',
@@ -74,43 +80,43 @@ class Create extends Component
             'section' => '价格库存',
             'fields' => [
                 [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '商品规格',
                     'type' => FormFieldTypes::TEXT,
                     'name' => 'sku',
                     'rule' => [],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '价格',
                     'type' => FormFieldTypes::TEXT,
                     'name' => 'price',
                     'rule' => [],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '划线价',
                     'type' => FormFieldTypes::TEXT,
                     'name' => 'through_line_price',
                     'rule' => [],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '库存扣减方式',
                     'type' => FormFieldTypes::TEXT,
                     'name' => 'msrp',
                     'rule' => [],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '库存',
                     'type' => FormFieldTypes::TEXT,
                     'name' => 'stock',
                     'rule' => [],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '商品编码',
                     'type' => FormFieldTypes::TEXT,
                     'name' => '',
                     'rule' => [],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '成本价',
                     'type' => FormFieldTypes::TEXT,
                     'name' => 'cost',
@@ -122,13 +128,13 @@ class Create extends Component
             'section' => '其他信息',
             'fields' => [
                 [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '售后服务',
                     'type' => FormFieldTypes::TEXT,
                     'name' => 'after_sales_service',
                     'rule' => [],
                 ], [
-                    'showAsterisk' => false,
+                    'show_asterisk' => false,
                     'label' => '起售',
                     'type' => FormFieldTypes::TEXT,
                     'name' => 'moq',
@@ -138,19 +144,28 @@ class Create extends Component
         ]
     ];
 
-    public array $formFields;
+    public array $formFields = [];
+
+    protected array $rules = [];
+    public array $creationData;
 
     public function mount()
     {
         parent::mount();
 
-        Log::info('test');
-        Log::info('test22');
-        Log::info('test333');
-
         if ($this->formConf) {
-            $this->formFields = FormBuilder::build($this->formConf);
+            foreach ($this->formConf as $section) {
+                if (isValidityArrayField($section, 'fields')) {
+                    foreach ($section['fields'] as $_field) {
+                        if (data_get($_field,'name')) {
+                            $this->creationData[data_get($_field,'name')] = data_get($_field,'value');
+                            $this->rules['creationData.'.data_get($_field,'name')] = data_get($_field,'value');
+                        }
+                    }
+                }
+            }
         }
+
     }
 
     /**

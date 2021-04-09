@@ -12,10 +12,11 @@ abstract class AbstractField implements FieldInterface
     protected string $label = '';
     protected string $name = '';
     protected array $rule = [];
-    protected bool $shouOnUI = false;
+    protected bool $showOnUI = false;
     protected bool $focus = false;
     protected string|array $value = '';
     protected string $helper = '';
+    protected string $palceholder = '';
     protected string $autocomplete = '';
     protected string $icon = '';
 
@@ -33,9 +34,9 @@ abstract class AbstractField implements FieldInterface
         return $this->getOrSet('rule')->value($rule);
     }
 
-    public function shouOnUI(?bool $shouOnUI = true): mixed
+    public function showOnUI(?bool $showOnUI = true): mixed
     {
-        return $this->getOrSet('shouOnUI')->value($shouOnUI);
+        return $this->getOrSet('shouOnUI')->value($showOnUI);
     }
 
     public function value($value = null): mixed
@@ -51,6 +52,11 @@ abstract class AbstractField implements FieldInterface
     public function helper(?string $helperText = null): mixed
     {
         return $this->getOrSet('helper')->value($helperText);
+    }
+
+    public function placeholder(?string $placeholder = null): mixed
+    {
+        return $this->getOrSet('placeholder')->value($placeholder);
     }
 
     public function autocomplete(?string $autocomplete = null): mixed
@@ -73,7 +79,7 @@ abstract class AbstractField implements FieldInterface
         return $this->options($optionLoader());
     }
 
-    public function label($label): mixed
+    public function label($label = null): mixed
     {
         return $this->getOrSet('label')->value($label);
     }

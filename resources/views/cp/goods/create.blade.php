@@ -10,8 +10,8 @@
 
                     <form wire:submit.prevent="store" class="space-y-8 divide-y divide-gray-200">
                         <div class="space-y-8 divide-y divide-gray-200 sm:space-y-5">
-                            @if($formFields && count($formFields))
-                                @foreach($formFields as $i => $formField)
+                            @if($formConf && count($formConf))
+                                @foreach($formConf as $i => $formField)
                                     <div class="{{ $i == 0 ? '' : 'pt-8 space-y-6 sm:pt-10 sm:space-y-5' }}">
                                         <div>
                                             <h3 class="text-lg leading-6 font-medium text-gray-900">
@@ -20,11 +20,12 @@
                                         </div>
 
                                         @if(isValidityArrayField($formField, 'fields'))
-                                        <div class="mt-6 sm:mt-5 space-y-6 sm:space-y-5">
-                                            @foreach($formField['fields'] as $field)
-                                                {!! $field->render() !!}
-                                            @endforeach
-                                        </div>
+
+                                                @foreach($formField['fields'] as $field)
+                                                    <x-fields.t label="{{ data_get($field, 'label') }}"
+                                                                helper="{{ data_get($field, 'helper') }}"
+                                                                ame="{{ data_get($field, 'name') }}"></x-fields.t>
+                                                @endforeach
                                         @endif
                                     </div>
                                 @endforeach
