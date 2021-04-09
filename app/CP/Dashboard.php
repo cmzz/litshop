@@ -2,7 +2,7 @@
 
 namespace LitShop\CP;
 
-use LitCore\Models\AdminUser;
+use LitCore\Entities\AdminUser;
 use Nav;
 
 class Dashboard extends BaseCpComponent

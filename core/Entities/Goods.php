@@ -1,7 +1,7 @@
 <?php
 
 
-namespace LitCore\Models;
+namespace LitCore\Entities;
 
 
 use Illuminate\Database\Eloquent\Model;

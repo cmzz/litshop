@@ -6,7 +6,7 @@ use Admin;
 use Illuminate\Contracts\Foundation\Application;
 use Illuminate\Http\RedirectResponse;
 use Illuminate\Routing\Redirector;
-use LitCore\Models\AdminUser;
+use LitCore\Entities\AdminUser;
 use Livewire\Component;
 use Nav;
 

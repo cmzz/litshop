@@ -2,7 +2,7 @@
 
 namespace Database\Factories;
 
-use LitCore\Models\User;
+use LitCore\Entities\User;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 

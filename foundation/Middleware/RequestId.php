@@ -13,6 +13,7 @@ class RequestId
 
     public function handle(Request $request, Closure $next)
     {
+        // 从 header 读取或生成 requestId
         $requestId =
             $request->headers->get(self::HEADER_NAME) ?:
             $request->headers->get(self::CF_HEADER_NAME) ?:

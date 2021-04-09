@@ -2,7 +2,7 @@
 
 namespace Foundation\Rules;
 
-use LitCore\Models\AdminUser;
+use LitCore\Entities\AdminUser;
 use Illuminate\Contracts\Validation\Rule;
 
 

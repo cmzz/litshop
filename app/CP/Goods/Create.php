@@ -4,7 +4,7 @@ namespace LitShop\CP\Goods;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Log;
-use LitCore\Models\Goods;
+use LitCore\Entities\Goods;
 use Util\FormBuilder\FormBuilder;
 use Util\FormField\FormFieldTypes;
 use LitShop\CP\BaseCpComponent as Component;

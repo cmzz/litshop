@@ -24,6 +24,7 @@
                                                 @foreach($formField['fields'] as $field)
                                                     <x-fields.t label="{{ data_get($field, 'label') }}"
                                                                 helper="{{ data_get($field, 'helper') }}"
+                                                                palceholder="{{ data_get($field, 'palceholder') }}"
                                                                 ame="{{ data_get($field, 'name') }}"></x-fields.t>
                                                 @endforeach
                                         @endif

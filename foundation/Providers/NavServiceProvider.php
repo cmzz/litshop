@@ -4,8 +4,8 @@ namespace Foundation\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Util\Navigation\Nav;
-use LitCore\Models\AdminUser;
-use LitCore\Models\User;
+use LitCore\Entities\AdminUser;
+use LitCore\Entities\User;
 
 class NavServiceProvider extends ServiceProvider
 {

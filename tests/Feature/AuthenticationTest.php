@@ -2,7 +2,7 @@
 
 namespace Tests\Feature;
 
-use LitCore\Models\User;
+use LitCore\Entities\User;
 use App\Providers\RouteServiceProvider;
 use Illuminate\Foundation\Testing\RefreshDatabase;
 use Tests\TestCase;

@@ -4,6 +4,10 @@ namespace Foundation\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Builder;
+use LitCore\Entities\Goods;
+use LitCore\Module\Goods\GoodsService;
+use LitCore\Repositories\Goods\GoodsInterface;
+use LitCore\Repositories\Goods\GoodsRepository;
 use Livewire\Component;
 
 /**
@@ -34,6 +38,16 @@ class AppServiceProvider extends ServiceProvider
 
         Builder::macro('search', function ($field, $string) {
             return $string ? $this->where($field, 'like', '%'.$string.'%') : $this;
+        });
+
+        // goods
+        $this->app->bind(GoodsInterface::class, function ($app) {
+            return new GoodsRepository(new Goods());
+        });
+        $this->app->bind(GoodsService::class, function ($app) {
+            return new GoodsService(
+                $app->make(GoodsInterface::class)
+            );
         });
     }
 }

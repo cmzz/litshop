@@ -2,7 +2,7 @@
 
 namespace LitShop\CP\Auth;
 
-use LitCore\Models\AdminUser;
+use LitCore\Entities\AdminUser;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 use Admin;
 use Livewire\Component;

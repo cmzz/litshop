@@ -13,6 +13,6 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \LitCore\Models\User::factory(10)->create();
+        // \LitCore\Entities\User::factory(10)->create();
     }
 }
