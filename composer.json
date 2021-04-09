@@ -1,9 +1,15 @@
 {
-    "name": "laravel/laravel",
+    "name": "cmzz/litshop",
     "type": "project",
-    "description": "The Laravel Framework.",
+    "description": "An open source e-commerce system.",
     "keywords": [
-        "framework",
+        "e-commerce",
+        "litShop",
+        "电子商务",
+        "开源电商系统",
+        "电商系统",
+        "商城系统",
+        "开源商城",
         "laravel"
     ],
     "license": "MIT",
@@ -21,7 +27,6 @@
     },
     "require-dev": {
         "roave/security-advisories": "dev-master",
-        "barryvdh/laravel-ide-helper": "^2.9",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
         "kitloong/laravel-migrations-generator": "^4.4",
@@ -69,14 +74,11 @@
         ],
         "post-update-cmd": [
             "Illuminate\\Foundation\\ComposerScripts::postUpdate",
-            "@php lit ide-helper:generate",
-            "@php lit ide-helper:meta"
         ]
     },
     "extra": {
         "laravel": {
             "dont-discover": [
-                "barryvdh/laravel-ide-helper"
             ]
         }
     }
