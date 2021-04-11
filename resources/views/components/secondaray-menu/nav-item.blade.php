@@ -7,7 +7,7 @@
 ])
 
 <a href="{{ !$isLeaf ? 'javascript:;' : $url }}"
-   {{ $attributes->merge(['class' => 'border-transparent text-gray-900 group mt-1 border-l-4 px-1 py-2 flex items-center text-sm font-medium rounded-md '. ($isActive && $isLeaf ? 'bg-gray-100 text-teal-700 ' : 'hover:bg-gray-50 hover:text-gray-900 ') . ($lvl > 1 ? 'pl-8 ' : '') ]) }}
+   {{ $attributes->merge(['class' => 'border-transparent text-gray-600 group mt-1 border-l-4 px-1 py-2 flex items-center text-sm font-medium rounded-md '. ($isActive && $isLeaf ? 'bg-gray-100 text-teal-700 ' : 'hover:bg-gray-50 hover:text-gray-900 ') . ($lvl > 1 ? 'pl-8 ' : '') ]) }}
    aria-current="page"
 >
     @if($svg)

@@ -153,7 +153,6 @@ class Create extends Component
     {
         parent::mount();
 
-        Log::info('33h3h3asaf', ['aaa' => 'cccccc']);
         if ($this->formConf) {
             foreach ($this->formConf as $section) {
                 if (isValidityArrayField($section, 'fields')) {
@@ -166,7 +165,6 @@ class Create extends Component
                 }
             }
         }
-
     }
 
     /**

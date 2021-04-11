@@ -29,9 +29,7 @@
                 -->
                 <div tabindex="0" class="relative flex-1 flex flex-col max-w-xs w-full bg-white focus:outline-none">
                     @include('cp.partition.logo')
-
                     @include('cp.partition.mobile.menus')
-
                     @include('cp.partition.mobile.userinfo')
 
                 </div>
@@ -45,7 +43,7 @@
         <div class="hidden lg:flex lg:flex-shrink-0">
             <div class="flex flex-col w-40">
                 <!-- Sidebar component, swap this element with another sidebar if you like -->
-                <div class="flex flex-col h-0 flex-1 border-r border-gray-200 bg-gray-100">
+                <div class="flex flex-col h-0 flex-1 border-r border-gray-200 bg-white">
                     @include('cp.partition.desktop.menus')
                     @include('cp.partition.desktop.userinfo')
                 </div>
@@ -72,7 +70,7 @@
             <div class="flex-1 relative z-0 flex overflow-hidden">
                 <main class="flex-1 relative z-0 overflow-y-auto focus:outline-none xl:order-last bg-gray-100" tabindex="0">
                     <!-- Start main area-->
-                    <div class="inset-0 py-6 px-4 sm:px-6 lg:px-8">
+                    <div class="inset-0">
                         {{ $slot }}
                     </div>
                     <!-- End main area -->
@@ -81,9 +79,15 @@
 {{--                @livewire(\LitShop\CP\SecondarySidebar::class)--}}
 
                 @if($topMenu->hasChildren())
-                    <aside class="hidden relative xl:order-first xl:flex xl:flex-col flex-shrink-0 w-48 border-r border-gray-200">
-                        <div class="absolute inset-0 py-6 px-3 lg:px-4">
-                            @include('cp.partition.desktop.secondary-sidebar')
+                    <aside class="hidden relative xl:order-first xl:flex xl:flex-col flex-shrink-0 w-40 border-r border-gray-200">
+                        <div class="">
+                            <x-cp-page-head smpx="4"  px="4" lgpx="5" class="font-medium">
+                                {{ $topMenu->name() }}管理
+                            </x-cp-page-head>
+
+                            <div class="absolute inset-0 pt-16 pb-6 px-3 lg:px-4">
+                                @include('cp.partition.desktop.secondary-sidebar')
+                            </div>
                         </div>
                     </aside>
                 @endif

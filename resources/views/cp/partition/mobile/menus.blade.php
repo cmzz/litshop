@@ -1,6 +1,6 @@
 <div class="flex-1 h-0 pt-5 pb-4 overflow-y-auto">
     <div class="flex-shrink-0 flex items-center px-4">
-        <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-logo-indigo-600-mark-gray-900-text.svg" alt="Workflow">
+        <img class="w-auto" src="{{ asset('img/logo-dark.svg') }}" alt="litshop logo">
     </div>
     <nav aria-label="Sidebar" class="mt-5">
         <div class="px-2 space-y-1">

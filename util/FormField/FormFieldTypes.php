@@ -18,5 +18,4 @@ class FormFieldTypes
     public const EDITOR = 'editor';
     public const SELECT = 'select';
     public const RADIO_BOX = 'radio_box';
-    public const UPLOAD = 'upload';
 }
