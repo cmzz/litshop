@@ -40,8 +40,7 @@ if (!function_exists('recursionSortArray')) {
      * @param $getSub
      * @param $updateSub
      */
-    function recursionSortArray(array &$items, callable $by, callable $getSub, callable $updateSub)
-    {
+    function recursionSortArray(array &$items, callable $by, callable $getSub, callable $updateSub) {
         if (is_array($items) && count($items) > 0) {
             $items = collect($items)->sortBy($by)->all();
 
@@ -73,8 +72,7 @@ if (!function_exists('pathToLeafBy')) {
      * @param int $l
      * @param false $break
      */
-    function pathToLeafBy(array &$items, array &$foundItems, callable $getSub, callable $condition, $l = 0, &$break = false)
-    {
+    function pathToLeafBy(array &$items, array &$foundItems, callable $getSub, callable $condition, $l = 0, &$break = false) {
         if (is_array($items) && count($items)) {
             foreach ($items as &$item) {
                 if ($break === true) {
@@ -112,8 +110,7 @@ if (!function_exists('createLinkToLeafBy')) {
      * @param array $parents
      * @param int $l
      */
-    function createLinkToLeafBy(array &$items, callable $getSub, callable $condition, callable $updateLeaf, &$leafItem = null, &$parents = [], $l = 0): void
-    {
+    function createLinkToLeafBy(array &$items, callable $getSub, callable $condition, callable $updateLeaf, &$leafItem = null, &$parents = [], $l = 0): void {
         if (is_array($items) && count($items) > 0) {
             foreach ($items as &$item) {
                 if ($l === 0) {
@@ -152,8 +149,7 @@ if (! function_exists('logAsync')) {
      * @param array $context
      * @return PendingClosureDispatch|PendingDispatch
      */
-    function logAsync(string $message, array $context = []): PendingDispatch|PendingClosureDispatch
-    {
+    function logAsync(string $message, array $context = []): PendingDispatch|PendingClosureDispatch {
         return dispatch(new LogAsyncJob($message, $context, request()->server()));
     }
 }
@@ -165,8 +161,7 @@ if (! function_exists('formatDuration')) {
      * @param float $seconds
      * @return string
      */
-    function formatDuration(float $seconds): string
-    {
+    function formatDuration(float $seconds): string {
         return match ($seconds) {
             $seconds < 0.001 => round($seconds * 1000000).'μs',
             $seconds < 1 => round($seconds * 1000, 2).'ms',
