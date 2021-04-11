@@ -1,6 +1,7 @@
 <?php
 
 use Foundation\Jobs\LogAsyncJob;
+use Illuminate\Foundation\Bus\PendingClosureDispatch;
 use Illuminate\Foundation\Bus\PendingDispatch;
 use JetBrains\PhpStorm\Pure;
 
@@ -147,11 +148,11 @@ if (! function_exists('logAsync')) {
     /**
      * 异步记录日志
      *
-     * @param  string  $message
-     * @param  array  $context
-     * @return PendingDispatch|mixed
+     * @param string $message
+     * @param array $context
+     * @return PendingClosureDispatch|PendingDispatch
      */
-    function logAsync(string $message, array $context = [])
+    function logAsync(string $message, array $context = []): PendingDispatch|PendingClosureDispatch
     {
         return dispatch(new LogAsyncJob($message, $context, request()->server()));
     }
@@ -164,7 +165,7 @@ if (! function_exists('formatDuration')) {
      * @param float $seconds
      * @return string
      */
-    function formatDuration(float $seconds)
+    function formatDuration(float $seconds): string
     {
         return match ($seconds) {
             $seconds < 0.001 => round($seconds * 1000000).'μs',
