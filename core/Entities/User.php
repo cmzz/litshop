@@ -20,9 +20,23 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
-        'email',
-        'password',
+        UserFields::ID,
+        UserFields::CREATED_AT,
+        UserFields::UPDATED_AT,
+        UserFields::DELETED_AT,
+        UserFields::NICK_NAME,
+        UserFields::AVATAR,
+        UserFields::STATUS,
+        UserFields::PHONE,
+        UserFields::EMAIL,
+        UserFields::AGE,
+        UserFields::BIRTH,
+        UserFields::GENDER,
+        UserFields::COUNTRY,
+        UserFields::PROVINCE,
+        UserFields::CITY,
+        UserFields::PASSWORD,
+        UserFields::EMAIL_VERIFIED_AT,
     ];
 
     /**
