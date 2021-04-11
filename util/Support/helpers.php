@@ -1,5 +1,7 @@
 <?php
 
+use Foundation\Jobs\LogAsyncJob;
+use Illuminate\Foundation\Bus\PendingDispatch;
 use JetBrains\PhpStorm\Pure;
 
 if (!function_exists('isValidityArrayField')) {
@@ -138,5 +140,36 @@ if (!function_exists('createLinkToLeafBy')) {
                 }
             }
         }
+    }
+}
+
+if (! function_exists('logAsync')) {
+    /**
+     * 异步记录日志
+     *
+     * @param  string  $message
+     * @param  array  $context
+     * @return PendingDispatch|mixed
+     */
+    function logAsync(string $message, array $context = [])
+    {
+        return dispatch(new LogAsyncJob($message, $context, request()->server()));
+    }
+}
+
+if (! function_exists('formatDuration')) {
+    /**
+     * 格式化时间
+     *
+     * @param float $seconds
+     * @return string
+     */
+    function formatDuration(float $seconds)
+    {
+        return match ($seconds) {
+            $seconds < 0.001 => round($seconds * 1000000).'μs',
+            $seconds < 1 => round($seconds * 1000, 2).'ms',
+            default => round($seconds, 2).'s',
+        };
     }
 }

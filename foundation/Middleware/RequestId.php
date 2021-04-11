@@ -3,8 +3,9 @@
 namespace Foundation\Middleware;
 
 use Closure;
+use Foundation\Events\RequestArrivedEvent;
+use Foundation\Events\RequestHandledEvent;
 use Illuminate\Http\Request;
-use Ramsey\Uuid\Uuid;
 
 class RequestId
 {
@@ -13,16 +14,12 @@ class RequestId
 
     public function handle(Request $request, Closure $next)
     {
-        // 从 header 读取或生成 requestId
-        $requestId =
-            $request->headers->get(self::HEADER_NAME) ?:
-            $request->headers->get(self::CF_HEADER_NAME) ?:
-            Uuid::uuid4()->toString();
+        event(new RequestArrivedEvent($request));
+        return $next($request);
+    }
 
-        $request->headers->set(self::HEADER_NAME, $requestId);
-        $response = $next($request);
-        $response->headers->set(self::HEADER_NAME, $requestId);
-
-        return $response;
+    public function terminate(Request $request, $response)
+    {
+        event(new RequestHandledEvent($request, $response));
     }
 }

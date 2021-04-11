@@ -40,6 +40,7 @@ class CustomizeFormatter
             $requestId = str_replace('-', '', $requestId);
             $requestIdMsg = !empty($requestId) ? ".".$requestId : '';
             $record['level_name'] =  $record['level_name'].$requestIdMsg;
+
             return $record;
         });
     }
