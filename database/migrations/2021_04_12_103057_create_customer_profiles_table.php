@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCategoryTable extends Migration
+class CreateCustomerProfilesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,12 @@ class CreateCategoryTable extends Migration
      */
     public function up()
     {
-        Schema::create('category', function (Blueprint $table) {
+        Schema::create('customer_profiles', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps(3);
-            $table->softDeletes('deleted_at', 3)->index('idx_category_deleted_at');
-            $table->unsignedBigInteger('pid')->nullable();
-            $table->string('name')->nullable();
-            $table->string('desc')->nullable();
-            $table->integer('status')->nullable();
+            $table->softDeletes('deleted_at', 3)->index('idx_customer_profile_deleted_at');
+            $table->unsignedBigInteger('customer_id')->nullable();
+            $table->integer('status')->nullable()->default(1);
         });
     }
 
@@ -31,6 +29,6 @@ class CreateCategoryTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('category');
+        Schema::dropIfExists('customer_profiles');
     }
 }

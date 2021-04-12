@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAttributeGroupTable extends Migration
+class CreateAttributeGroupMappingTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateAttributeGroupTable extends Migration
      */
     public function up()
     {
-        Schema::create('attribute_group', function (Blueprint $table) {
+        Schema::create('attribute_group_mapping', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps(3);
-            $table->softDeletes('deleted_at', 3)->index('idx_attribute_group_deleted_at');
-            $table->string('name')->nullable();
+            $table->softDeletes('deleted_at', 3)->index('idx_attribute_group_mapping_deleted_at');
+            $table->unsignedBigInteger('attribute_id')->nullable();
+            $table->unsignedBigInteger('attribute_group_id')->nullable();
             $table->integer('position')->nullable();
-            $table->boolean('is_user_defined')->nullable();
-            $table->bigInteger('attribute_family_id')->nullable();
+            $table->integer('status')->nullable()->default(1);
         });
     }
 
@@ -31,6 +31,6 @@ class CreateAttributeGroupTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('attribute_group');
+        Schema::dropIfExists('attribute_group_mapping');
     }
 }

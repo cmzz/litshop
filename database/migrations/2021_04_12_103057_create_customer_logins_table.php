@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCustomerLoginTable extends Migration
+class CreateCustomerLoginsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateCustomerLoginTable extends Migration
      */
     public function up()
     {
-        Schema::create('customer_login', function (Blueprint $table) {
+        Schema::create('customer_logins', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps(3);
             $table->softDeletes('deleted_at', 3)->index('idx_customer_login_deleted_at');
@@ -34,6 +34,6 @@ class CreateCustomerLoginTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('customer_login');
+        Schema::dropIfExists('customer_logins');
     }
 }

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProductCatalogMappingTable extends Migration
+class CreateBrandsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class CreateProductCatalogMappingTable extends Migration
      */
     public function up()
     {
-        Schema::create('product_catalog_mapping', function (Blueprint $table) {
+        Schema::create('brands', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps(3);
-            $table->softDeletes('deleted_at', 3)->index('idx_product_catalog_mapping_deleted_at');
-            $table->unsignedBigInteger('product_id')->nullable();
-            $table->unsignedBigInteger('catalog_id')->nullable();
+            $table->softDeletes('deleted_at', 3)->index('idx_brand_deleted_at');
+            $table->string('name')->nullable();
+            $table->string('desc')->nullable();
+            $table->unsignedBigInteger('logo_media_id')->nullable();
+            $table->integer('status')->nullable();
         });
     }
 
@@ -29,6 +31,6 @@ class CreateProductCatalogMappingTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('product_catalog_mapping');
+        Schema::dropIfExists('brands');
     }
 }

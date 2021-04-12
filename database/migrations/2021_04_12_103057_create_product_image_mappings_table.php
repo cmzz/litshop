@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProductAttrValueTable extends Migration
+class CreateProductImageMappingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,14 +13,14 @@ class CreateProductAttrValueTable extends Migration
      */
     public function up()
     {
-        Schema::create('product_attr_value', function (Blueprint $table) {
+        Schema::create('product_image_mappings', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps(3);
-            $table->softDeletes('deleted_at', 3)->index('idx_product_attr_value_deleted_at');
+            $table->softDeletes('deleted_at', 3)->index('idx_product_image_mapping_deleted_at');
             $table->unsignedBigInteger('product_id')->nullable();
-            $table->unsignedBigInteger('attribute_id')->nullable();
-            $table->string('value')->nullable();
-            $table->string('desc')->nullable();
+            $table->unsignedBigInteger('media_id')->nullable();
+            $table->boolean('is_main')->nullable();
+            $table->integer('status')->nullable()->default(1);
         });
     }
 
@@ -31,6 +31,6 @@ class CreateProductAttrValueTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('product_attr_value');
+        Schema::dropIfExists('product_image_mappings');
     }
 }

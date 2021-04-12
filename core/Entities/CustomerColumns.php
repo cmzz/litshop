@@ -4,13 +4,14 @@
 namespace LitCore\Entities;
 
 
-class UserFields
+class CustomerColumns extends UserColumns
 {
     public const ID = 'id';
     public const CREATED_AT = 'created_at';
     public const UPDATED_AT = 'updated_at';
     public const DELETED_AT = 'deleted_at';
-    public const NICK_NAME = 'nick_name';
+    public const NAME = 'name';
+    public const REMEMBER_TOKEN = 'remember_token';
     public const AVATAR = 'avatar';
     public const STATUS = 'status';
     public const PHONE = 'phone';

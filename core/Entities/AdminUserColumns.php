@@ -4,7 +4,7 @@
 namespace LitCore\Entities;
 
 
-class AdminUserFields
+class AdminUserColumns
 {
     public const ID = 'id';
     public const NAME = 'name';

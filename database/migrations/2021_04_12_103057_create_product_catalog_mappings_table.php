@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateProductSkuStockTable extends Migration
+class CreateProductCatalogMappingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,12 @@ class CreateProductSkuStockTable extends Migration
      */
     public function up()
     {
-        Schema::create('product_sku_stock', function (Blueprint $table) {
+        Schema::create('product_catalog_mappings', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->timestamps(3);
-            $table->softDeletes('deleted_at', 3)->index('idx_product_sku_stock_deleted_at');
+            $table->softDeletes('deleted_at', 3)->index('idx_product_catalog_mapping_deleted_at');
             $table->unsignedBigInteger('product_id')->nullable();
-            $table->unsignedBigInteger('sku_id')->nullable();
-            $table->unsignedBigInteger('stock')->nullable();
+            $table->unsignedBigInteger('catalog_id')->nullable();
         });
     }
 
@@ -30,6 +29,6 @@ class CreateProductSkuStockTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('product_sku_stock');
+        Schema::dropIfExists('product_catalog_mappings');
     }
 }

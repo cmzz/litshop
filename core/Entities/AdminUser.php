@@ -21,19 +21,19 @@ class AdminUser extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        AdminUserFields::ID,
-        AdminUserFields::NAME,
-        AdminUserFields::NICKNAME,
-        AdminUserFields::STATUS,
-        AdminUserFields::EMAIL,
-        AdminUserFields::PHONE,
-        AdminUserFields::EMAIL_VERIFIED_AT,
-        AdminUserFields::PHONE_VERIFIED_AT,
-        AdminUserFields::PASSWORD,
-        AdminUserFields::REMEMBER_TOKEN,
-        AdminUserFields::AVATAR,
-        AdminUserFields::CREATED_AT,
-        AdminUserFields::UPDATED_AT,
+        AdminUserColumns::ID,
+        AdminUserColumns::NAME,
+        AdminUserColumns::NICKNAME,
+        AdminUserColumns::STATUS,
+        AdminUserColumns::EMAIL,
+        AdminUserColumns::PHONE,
+        AdminUserColumns::EMAIL_VERIFIED_AT,
+        AdminUserColumns::PHONE_VERIFIED_AT,
+        AdminUserColumns::PASSWORD,
+        AdminUserColumns::REMEMBER_TOKEN,
+        AdminUserColumns::AVATAR,
+        AdminUserColumns::CREATED_AT,
+        AdminUserColumns::UPDATED_AT,
     ];
 
     /**
@@ -42,8 +42,8 @@ class AdminUser extends Authenticatable
      * @var array
      */
     protected $hidden = [
-        AdminUserFields::PASSWORD,
-        AdminUserFields::REMEMBER_TOKEN,
+        AdminUserColumns::PASSWORD,
+        AdminUserColumns::REMEMBER_TOKEN,
     ];
 
     /**
@@ -52,7 +52,7 @@ class AdminUser extends Authenticatable
      * @var array
      */
     protected $casts = [
-        AdminUserFields::EMAIL_VERIFIED_AT => 'datetime',
+        AdminUserColumns::EMAIL_VERIFIED_AT => 'datetime',
     ];
 
     /**
@@ -61,7 +61,7 @@ class AdminUser extends Authenticatable
      * @var array
      */
     protected $appends = [
-        AdminUserFields::AVATAR,
+        AdminUserColumns::AVATAR,
     ];
 
     public function getAvatarAttribute($key): string

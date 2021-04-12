@@ -20,6 +20,7 @@ class CreateAttributeOptionTable extends Migration
             $table->bigInteger('sort_order')->nullable();
             $table->unsignedBigInteger('attribute_id')->nullable();
             $table->unsignedBigInteger('swatch_value')->nullable();
+            $table->integer('status')->nullable()->default(1);
         });
     }
 
